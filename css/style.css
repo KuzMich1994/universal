@@ -424,6 +424,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -681,5 +682,63 @@ img {
 
 .main-info__tab-text_uppercase {
   text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .header-nav__item {
+    margin-left: 20px;
+  }
+  .main-info__wrapper {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+  .header-nav {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+  .header-nav__ul {
+    margin-top: 15px;
+    justify-content: space-evenly;
+    width: 100%;
+    order: 1;
+  }
+  .header-nav__item {
+    margin-left: 0;
+  }
+  .main-info__wrapper {
+    width: 700px;
+  }
+  .main-info__left {
+    width: 437px;
+    height: auto;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 55px;
+  }
+  .main-info__title {
+    font-size: 30px;
+    max-width: 320px;
+  }
+  .main-info__recommend-title {
+    padding: 15px 20px 0 20px;
+    margin-bottom: 14px;
+  }
+  .main-info__tab {
+    padding: 17px 20px 19px 20px;
+  }
+  .main-info__tab:nth-child(5) {
+    padding-bottom: 19px;
+  }
+  .main-info__tab:nth-child(6) {
+    padding-bottom: 19px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
