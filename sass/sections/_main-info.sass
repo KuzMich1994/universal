@@ -1,0 +1,143 @@
+.main-info
+  position: relative
+  height: 475px
+  background-color: $dark
+  &__wrapper
+    position: absolute
+    top: 30px
+    max-width: 1140px
+    display: flex
+    border-radius: 10px
+    overflow: hidden
+    z-index: 1
+  &__left
+    position: relative
+    width: 877px
+    height: 570px
+    padding-left: 55px
+    padding-top: 55px
+    padding-bottom: 100px
+    &::before
+      position: absolute
+      content: ''
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+      z-index: -1
+  &__image
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    z-index: -2
+  &__profile
+    display: flex
+    align-items: center
+    max-width: 206px
+    text-decoration: none
+  &__avatar
+    width: 45px
+    height: 45px
+    border-radius: 50%
+  &__user
+    display: flex
+    flex-wrap: wrap
+    margin-left: 10px
+  &__username
+    margin-bottom: 2px
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: $text-color-light
+    opacity: 0.85
+  &__text
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: $text-color-light
+    opacity: 0.4
+    &-block
+      margin-top: 145px
+      margin-bottom: 48px
+  &__subtitle
+    font-weight: 900
+    font-size: 12px
+    line-height: 15px
+    letter-spacing: 0.5px
+    color: $primary
+    text-transform: uppercase
+  &__title
+    margin: 0
+    margin-top: 20px
+    max-width: 598px
+    font-family: 'Roboto Slab', serif
+    font-style: normal
+    font-weight: bold
+    font-size: 40px
+    line-height: 50px
+    color: $text-color-light
+  &__button
+    text-decoration: none
+  &__right
+    display: flex
+    flex-direction: column
+    background-color: #fff
+    max-width: 263px
+  &__recommend
+    &-title
+      padding: 20px 25px 0 25px
+      margin: 0
+      margin-bottom: 19px
+      font-family: 'Lato-Black', sans-serif
+      font-size: 14px
+      line-height: 20px
+      color: $title-color-dark
+      letter-spacing: 0.5px
+      text-transform: uppercase
+  &__tab
+    padding: 17px 25px 19px 25px
+    border-top: 1px solid #D9DADB
+    cursor: pointer
+    &:nth-child(5)
+      padding-bottom: 39px
+    &:nth-child(6)
+      padding-bottom: 28px
+    &:hover
+      background-color: #F5F5F5
+    &-title
+      margin: 0
+      margin-bottom: 8px
+      font-family: 'Lato-Black', sans-serif
+      font-size: 12px
+      line-height: 15px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      &_css
+        color: #3BBDC4
+      &_js
+        color: #6E99AE
+      &_html
+        color: #AC8EE3
+      &_web
+        color: #FFA34D
+      &_css-green
+        color: #3DC47E
+        margin-top: 2px
+    &-text
+      margin: 0
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text-color-dark
+      &_uppercase
+        text-transform: uppercase
+  
