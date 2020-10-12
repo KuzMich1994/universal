@@ -1,0 +1,64 @@
+@media (max-width: 767px)
+  .container
+    max-width: 576px
+    width: 92%
+  .header
+    &__logo
+      width: 120px
+    &-nav
+      &__ul
+        display: none
+      &__search
+        display: none
+  .menu
+    &-button
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      width: 16px
+      height: 11px
+      padding: 0
+      border: none
+      background-color: $dark
+      cursor: pointer
+      outline: none
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color-light
+  .main-info
+    margin-top: -1px
+    &__wrapper
+      top: 20px
+      flex-direction: column
+      max-width: 576px
+    &__left
+      padding-top: 20px
+      padding-left: 20px
+      padding-bottom: 35px
+      width: 100%
+    &__text
+      &-block
+        margin-top: 40px
+    &__right
+      max-width: 100%
+      order: -1
+    &__recommend
+      position: relative
+      &-title
+        text-align: center
+      //  display: flex
+      //  justify-content: center
+    &__tabs
+      width: 800px
+      display: flex
+      &-wrapper
+        overflow: scroll
+    &__tab
+      display: flex
+      flex-wrap: wrap
+      width: 160px
+      padding: 17px 10px 19px 10px
+      border-right: 1px solid #D9DADB
+  .articles
+    padding-top: 170px

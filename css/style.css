@@ -504,6 +504,14 @@ img {
   outline: none;
 }
 
+.header-nav__benu-button {
+  display: none;
+}
+
+.menu-button {
+  display: none;
+}
+
 .main-info {
   position: relative;
   height: 475px;
@@ -595,6 +603,12 @@ img {
   margin-bottom: 48px;
 }
 
+.main-info__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
 .main-info__subtitle {
   font-weight: 900;
   font-size: 12px;
@@ -617,6 +631,7 @@ img {
 }
 
 .main-info__button {
+  max-width: 200px;
   text-decoration: none;
 }
 
@@ -645,11 +660,11 @@ img {
   cursor: pointer;
 }
 
-.main-info__tab:nth-child(5) {
+.main-info__tab:nth-child(4) {
   padding-bottom: 39px;
 }
 
-.main-info__tab:nth-child(6) {
+.main-info__tab:nth-child(5) {
   padding-bottom: 28px;
 }
 
@@ -1323,6 +1338,83 @@ img {
   }
   .main-info__tab:nth-child(6) {
     padding-bottom: 19px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 576px;
+    width: 92%;
+  }
+  .header__logo {
+    width: 120px;
+  }
+  .header-nav__ul {
+    display: none;
+  }
+  .header-nav__search {
+    display: none;
+  }
+  .menu-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 16px;
+    height: 11px;
+    padding: 0;
+    border: none;
+    background-color: #262D33;
+    cursor: pointer;
+    outline: none;
+  }
+  .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #FFFFFF;
+  }
+  .main-info {
+    margin-top: -1px;
+  }
+  .main-info__wrapper {
+    top: 20px;
+    flex-direction: column;
+    max-width: 576px;
+  }
+  .main-info__left {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 35px;
+    width: 100%;
+  }
+  .main-info__text-block {
+    margin-top: 40px;
+  }
+  .main-info__right {
+    max-width: 100%;
+    order: -1;
+  }
+  .main-info__recommend {
+    position: relative;
+  }
+  .main-info__recommend-title {
+    text-align: center;
+  }
+  .main-info__tabs {
+    width: 800px;
+    display: flex;
+  }
+  .main-info__tabs-wrapper {
+    overflow: scroll;
+  }
+  .main-info__tab {
+    display: flex;
+    flex-wrap: wrap;
+    width: 160px;
+    padding: 17px 10px 19px 10px;
+    border-right: 1px solid #D9DADB;
+  }
+  .articles {
+    padding-top: 170px;
   }
 }
 /*# sourceMappingURL=style.css.map */
