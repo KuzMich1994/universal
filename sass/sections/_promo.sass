@@ -1,0 +1,37 @@
+.promo
+  position: relative
+  padding-top: 50px
+  padding-bottom: 55px
+  background: url(../img/promo/promo-bg.jpg)
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  z-index: 1
+  &::before
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    content: ''
+    background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+    z-index: -1
+  &-wrapper
+    display: flex
+    flex-direction: column
+    max-width: 946px
+    margin: auto
+  &__title
+    margin: 0
+    margin-bottom: 25px
+    text-align: center
+    font-family: 'Roboto Slab', serif
+    font-style: normal
+    font-weight: bold
+    font-size: 40px
+    line-height: 50px
+    color: $text-color-light
+  &__button
+    max-width: 200px
+    margin: auto
+    text-decoration: none
