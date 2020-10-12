@@ -1,0 +1,378 @@
+.articles
+  padding-top: 155px
+  padding-bottom: 60px
+  &-grid
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: repeat(4, 170px)
+    grid-row-gap: 30px
+    grid-column-gap: 30px
+    margin-top: 30px
+  &__card
+    background-color: $text-color-light
+    border-radius: 10px
+    overflow: hidden
+    &_dreamwork
+      grid-column: 1/3
+      grid-row: 1/3
+      background: url(../img/articles/dreamwork-img.png)
+      background-repeat: no-repeat
+      background-position: right 16px
+      background-color: $text-color-light
+    &_web-design
+      position: relative
+      grid-column: 3/4
+      grid-row: 1/3
+      background: url(../img/articles/web-design-bg.jpg)
+      background-position: center
+      background-size: cover
+      background-repeat: no-repeat
+      z-index: 1
+      &::after
+        position: absolute
+        content: ''
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+        z-index: -1
+    &_tools
+      grid-column: 1/2
+      grid-row: 3/5
+    &_referens
+      grid-column: 2/3
+      grid-row: 3/4
+    &_customers
+      grid-column: 3/4
+      grid-row: 3/4
+    &_work
+      grid-column: 2/3
+      grid-row: 4/5
+    &_free
+      grid-column: 3/4
+      grid-row: 4/5
+    &_download
+      grid-column: 4/5
+      grid-row: 1/2
+    &_tags
+      grid-column: 4/5
+      grid-row: 2/4
+    &_social
+      grid-column: 4/5
+      grid-row: 4/5
+.dreamwork
+  position: relative
+  display: flex
+  flex-direction: column
+  padding: 35px 0 13px 35px
+  &__text
+    max-width: 238px
+    &::after
+      position: absolute
+      left: 0
+      content: ''
+      width: 555px
+      height: 1px
+      background-color: #D9DADB
+  &__subtitle
+    font-family: 'Lato-Black', sans-serif
+    font-style: normal
+    font-size: 12px
+    line-height: 15px
+    letter-spacing: 0.5px
+    color: #6E99AE
+    text-transform: uppercase
+  &__title
+    margin-top: 20px
+    font-family: 'Roboto Slab', serif
+    font-style: normal
+    font-weight: bold
+    font-size: 25px
+    line-height: 30px
+    color: $title-color-dark
+  &__description
+    margin-top: 0
+    margin-bottom: 49px
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+  &__link
+    margin-top: 15px
+    display: flex
+    align-items: center
+    text-decoration: none
+  &__avatar
+    margin-right: 10px
+    width: 30px
+    height: 30px
+    border-radius: 50%
+    object-fit: cover
+  &__username
+    margin-right: 5px
+    font-family: 'Lato-Black', sans-serif
+    font-style: normal
+    font-size: 14px
+    line-height: 20px
+    color: $title-color-dark
+  &__comment
+    margin-right: 15px
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: $text-color-dark
+    &-numbers
+      max-width: 30px
+      overflow: hidden
+      text-overflow: ellipsis
+  &__icon
+    margin-right: 5px
+    width: 15px
+    height: 15px
+.web-design
+  padding: 0 25px 25px 25px
+  &__text
+    margin-top: 160px
+  &__subtitle
+    font-family: 'Lato-Black', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    text-transform: uppercase
+    letter-spacing: 0.5px
+    color: #E7D9FF
+  &__title
+    margin-top: 23px
+    margin-bottom: 27px
+    font-family: 'Roboto Slab', serif
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 25px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    color: $text-color-light
+  &__link
+    display: flex
+    align-items: center
+    text-decoration: none
+  &__avatar
+    margin-right: 10px
+    width: 45px
+    height: 45px
+    border-radius: 50%
+    object-fit: cover
+  &__username
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: $text-color-light
+    opacity: 0.85
+  &__comment
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 157px
+  &__numbers
+    overflow: hidden
+    text-overflow: ellipsis
+    max-width: 30px
+    &:last-child
+      margin-right: 0
+  &__icon
+    width: 15px
+    height: 15px
+  &__label
+    position: absolute
+    top: 19px
+    left: 25px
+    max-width: 100px
+    padding: 5px 12px
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: $text-color-light
+    background-color: #3DC47E
+    border-radius: 3px
+.tools
+  &__image
+    width: 100%
+    height: 275px
+    object-fit: cover
+  &__title
+    padding: 0 25px 30px 25px
+    margin: 0
+    margin-top: 15px
+    max-width: 237px
+    font-family: 'Roboto Slab', serif
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 25px
+.other-article
+  padding: 25px 25px 30px 25px
+  &__title
+    margin: 0
+    margin-bottom: 5px
+    font-family: 'Roboto Slab', serif
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 25px
+  &__description
+    margin: 0
+    margin-bottom: 10px
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: $text-color-dark
+    &_customers
+      margin-bottom: 30px
+.download
+  position: relative
+  padding: 25px 25px 13px 25px
+  background-color: #3BBDC4
+  &::after
+    position: absolute
+    bottom: 45px
+    left: 0
+    content: ''
+    width: 263px
+    height: 1px
+    background-color: #96E2E3
+  &__text
+    margin-bottom: 19px
+  &__title
+    margin: 0
+    margin-bottom: 10px
+    font-family: 'Roboto Slab', serif
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 25px
+    color: $text-color-light
+  &__subtitle
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: #C1F4F5
+  &__wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    padding-top: 12px
+  &__icon
+    width: 20px
+    height: 20px
+    margin-right: 10px
+  &__link
+    font-family: 'Lato-Black', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: $text-color-light
+    text-decoration: none
+.tags
+  position: relative
+  padding: 20px 0 30px 25px
+  &::after
+    position: absolute
+    top: 59px
+    left: 0
+    content: ''
+    width: 263px
+    height: 1px
+    background-color: #D9DADB
+  &__title
+    margin: 0
+    margin-bottom: 45px
+    font-family: 'Lato-Black', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    text-transform: uppercase
+  &__group
+    display: flex
+    flex-wrap: wrap
+  &__button
+    padding: 5px 15px 5px 14px
+    margin-right: 10px
+    margin-bottom: 13px
+    background-color: transparent
+    border: 1px solid #D9DADB
+    border-radius: 5px
+    cursor: pointer
+    outline: none
+    &:last-child
+      margin-right: 0
+    &-text
+      font-family: 'Lato-Black', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+.social
+  padding: 30px 25px 40px 25px
+  &-wrapper
+    margin: auto
+    display: flex
+    justify-content: space-between
+    width: 190px
+  &__title
+    text-align: center
+    margin: 0
+    margin-bottom: 25px
+    font-family: 'Roboto Slab', serif
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 25px
+  &__icon
+    width: 50px
+    height: 50px
+.features
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 25px 25px 30px 25px
+  background-color: $dark
+  border-radius: 10px
+  overflow:
+  &__wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 260px
+    &:last-child
+      width: 235px
+      &::after
+        display: none
+    &::after
+      content: ''
+      width: 1px
+      height: 75px
+      margin-left: 25px
+      background-color: #4B5157
+      &:nth-child(2)
+        margin-right: 0
+  &__title
+    margin-right: 15px
+    font-family: 'Lato-Black', sans-serif
+    font-style: normal
+    font-size: 14px
+    line-height: 20px
+    color: $text-color-light
+    &_slider
+      max-width: 151px
+  &__img
+    width: 65px
+    height: 65px
