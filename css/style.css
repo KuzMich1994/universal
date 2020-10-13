@@ -446,6 +446,10 @@ img {
   color: red;
 }
 
+a:hover {
+  text-decoration-line: underline;
+}
+
 .header {
   background-color: #262D33;
   padding: 15px 0;
@@ -875,6 +879,10 @@ img {
   color: #262D33;
 }
 
+.dreamwork__title-link {
+  text-decoration: none;
+}
+
 .dreamwork__description {
   margin-top: 0;
   margin-bottom: 49px;
@@ -961,6 +969,10 @@ img {
   color: #FFFFFF;
 }
 
+.web-design__title-link {
+  text-decoration: none;
+}
+
 .web-design__link {
   display: flex;
   align-items: center;
@@ -1037,6 +1049,11 @@ img {
   font-weight: bold;
   font-size: 16px;
   line-height: 25px;
+  color: #262D33;
+}
+
+.tools__link {
+  text-decoration: none;
 }
 
 .other-article {
@@ -1051,6 +1068,11 @@ img {
   font-weight: bold;
   font-size: 16px;
   line-height: 25px;
+  color: #262D33;
+}
+
+.other-article__link {
+  text-decoration: none;
 }
 
 .other-article__description {
@@ -1111,6 +1133,7 @@ img {
   align-items: center;
   justify-content: center;
   padding-top: 12px;
+  cursor: pointer;
 }
 
 .download__icon {
@@ -1380,6 +1403,10 @@ img {
   color: #AC8EE3;
 }
 
+.news__card-link {
+  text-decoration: none;
+}
+
 .news__card-title {
   max-width: 437px;
   margin-top: 15px;
@@ -1525,6 +1552,10 @@ img {
   width: 263px;
   height: 1px;
   background-color: #D9DADB;
+}
+
+.news__post-button:hover {
+  color: #4592FF;
 }
 
 @media (max-width: 1200px) {
