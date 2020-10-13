@@ -435,6 +435,10 @@ img {
   padding: 15px 0;
 }
 
+.header__wrapper {
+  margin-right: 30px;
+}
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -1522,6 +1526,7 @@ img {
     flex-direction: column;
   }
   .header-nav__item {
+    margin-left: 0;
     margin-bottom: 15px;
   }
   .header-nav__item:last-child {
