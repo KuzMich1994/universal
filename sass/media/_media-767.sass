@@ -32,6 +32,7 @@
       top: 20px
       flex-direction: column
       max-width: 576px
+      width: 92%
     &__left
       padding-top: 20px
       padding-left: 20px
@@ -47,18 +48,80 @@
       position: relative
       &-title
         text-align: center
-      //  display: flex
-      //  justify-content: center
     &__tabs
-      width: 800px
+      width: 1200px
       display: flex
       &-wrapper
         overflow: scroll
+        &::-webkit-scrollbar
+          display: none
     &__tab
       display: flex
       flex-wrap: wrap
-      width: 160px
+      width: 240px
       padding: 17px 10px 19px 10px
       border-right: 1px solid #D9DADB
   .articles
-    padding-top: 170px
+    &-grid
+      grid-template-columns: repeat(auto-fill, 100%)
+      grid-template-rows: repeat(9, 180px)
+      grid-row-gap: 30px
+    &__card
+      &_dreamwork
+        grid-column: 1/2  
+      &_web-design
+        grid-column: 1/2
+        grid-row: 3/5
+      &_tools
+        grid-column: 1/2
+        grid-row: 5/7
+      &_download
+        grid-column: 1/2
+        grid-row: 7/8
+      &_tags
+        grid-column: 1/2  
+        grid-row: 8/9
+      &_social
+        grid-column: 1/2
+        grid-row: 9/10
+  .dreamwork
+    &__text
+      max-width: 340px
+      &::after
+        width: 100%
+    &__description
+      margin-bottom: 120px
+  .web-design
+    padding-left: 25px
+    padding-bottom: 30px
+    &__text
+      margin-top: 240px
+  .tools
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+    &__image
+      height: 300px
+    &__title
+      padding: 5px 20px 5px 20px
+      margin: 0
+      max-width: 400px
+  .download
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &::after
+      width: 100%
+    &__text
+      max-width: 300px
+  .tags
+    &__group
+      overflow-y: auto
+  .other-article
+    display: none
+  .promo
+    &-wrapper
+      max-width: 568px
+    &__title
+      font-size: 22px
