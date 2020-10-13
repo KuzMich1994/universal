@@ -97,4 +97,30 @@
       max-width: 700px
     &__title
       font-size: 28px
-        
+  .news
+    &__wrapper
+      flex-direction: column
+    &__left
+      width: 100%
+    &__right
+      display: flex
+      flex-wrap: wrap
+      flex-direction: row
+      margin-bottom: 30px
+      order: -1
+      &-wrapper
+        flex-direction: row
+    &__title
+      text-align: center
+      flex-basis: 100%
+      &::after
+        width: 700px
+    &__post
+      flex-basis: 49%
+      &:nth-child(8)
+        display: none
+      &-icon
+        right: 0
+      &-button
+        &::after
+          display: none

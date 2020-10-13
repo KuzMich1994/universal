@@ -1,0 +1,158 @@
+.news
+  padding: 60px 0
+  &__wrapper
+    display: flex
+    align-items: flex-start
+    overflow: hidden
+  &__left
+    display: flex
+    flex-direction: column
+    margin-right: 29px
+    border-radius: 10px
+    overflow: hidden
+  &__card
+    position: relative
+    padding: 25px
+    display: flex
+    align-items: center
+    background-color: #ffffff
+    &::after
+      position: absolute
+      bottom: 0
+      content: ''
+      width: 798px
+      height: 1px
+      background-color: #fff
+      background: #D9DADB
+    &-image
+      width: 336px
+      height: 195px
+      margin-right: 25px
+      object-fit: cover
+    &-subtitle
+      font-family: 'Lato-Black', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      text-transform: uppercase
+      letter-spacing: 0.5px
+      &_blue
+        color: #4592FF
+      &_bluegreen
+        color: #3BBDC4
+      &_red
+        color: #FF4F52
+      &_purple
+        color: #AC8EE3
+    &-title
+      max-width: 437px
+      margin-top: 15px
+      margin-bottom: 10px
+      font-family: 'Roboto Slab', serif
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      color: $title-color-dark
+    &-description
+      min-width: 437px
+      max-width: 440px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text-color-dark
+    &-bottom
+      display: flex
+      align-items: center
+    &-date
+      margin-right: 10px
+    &-icon
+      margin-right: 5px
+      width: 13px
+      height: 13px
+    &-numbers
+      margin-right: 10px
+    &-flag
+      position: absolute
+      top: 25px
+      right: 25px
+      cursor: pointer
+  &__right
+    padding: 20px 25px 0 25px
+    background-color: #fff
+    border-radius: 10px
+  &__title
+    margin: 0
+    position: relative
+    padding-bottom: 19px
+    font-family: 'Lato-Black', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    text-transform: uppercase
+    letter-spacing: 0.5px
+    &::after
+      position: absolute
+      bottom: 0
+      left: -25px
+      content: ''
+      width: 263px
+      height: 1px
+      background-color: #D9DADB
+  &__post
+    position: relative
+    padding-top: 17px
+    padding-bottom: 17px
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    border-bottom: 1px solid #D9DADB
+    &:nth-child(8)
+      border-bottom: none
+    &-image
+      margin-right: 10px
+      width: 60px
+      height: 60px
+    &-text
+      display: flex
+      flex-wrap: wrap
+      width: 140px
+    &-title
+      margin: 0
+      max-width: 143px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text-color-dark
+    &-icon
+      position: absolute
+      right: 0
+      top: 20px
+      width: 41px
+      height: 50px
+    &-button
+      position: relative
+      width: 100%
+      height: 45px
+      padding: 0
+      font-family: 'Lato-Black', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      border: none
+      background-color: #fff
+      outline: none
+      cursor: pointer
+      &::after
+        position: absolute
+        top: 0
+        left: -25px
+        content: ''
+        width: 263px
+        height: 1px
+        background-color: #D9DADB
