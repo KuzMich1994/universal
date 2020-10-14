@@ -450,6 +450,18 @@ a:hover {
   text-decoration-line: underline;
 }
 
+#email-error {
+  position: absolute;
+  left: 0;
+  top: 45px;
+  color: red;
+  font-family: 'Lato-Black', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
 .header {
   background-color: #262D33;
   padding: 15px 0;
@@ -1879,12 +1891,15 @@ a:hover {
 }
 
 .footer__form {
+  position: relative;
   padding-bottom: 70px;
+  width: 460px;
   display: flex;
   align-items: center;
 }
 
 .footer__input {
+  position: relative;
   margin-right: 10px;
   padding: 10px 15px;
   width: 314px;
@@ -2772,6 +2787,16 @@ a:hover {
   }
   .footer-links__item:nth-last-child(-n+2) {
     margin-bottom: 0;
+  }
+  #email-error {
+    left: 10px;
+  }
+}
+
+@media (max-width: 386px) {
+  #email-error {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 /*# sourceMappingURL=style.css.map */

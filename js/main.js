@@ -32,6 +32,21 @@ $(document).ready(function () {
   },
 
   })
+
+  $('.form').validate({
+    errorClass: "invalid",
+    rules: {
+      email: {
+        required: true,
+      },
+    },
+    messages: {
+      email: {
+        required: "Введите e-mail",
+        email: "Формат: email@email.ru"
+      }
+    }
+  })
 });
 
 

@@ -521,8 +521,8 @@
     <div class="container">
       <div class="footer-top">
         <h2 class="footer__title">Подпишитесь на нашу рассылку</h2>
-        <form action="#" class="footer__form">
-          <input type="email" class="footer__input" placeholder="Email">
+        <form action="send.php" method="POST" class="footer__form form">
+          <input type="email" name="email" class="footer__input" placeholder="Email" required>
           <button class="button footer__button">
             <span class="footer__button-text">Подписаться</span>
           </button>
@@ -609,6 +609,7 @@
   </footer>
 
   <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 
