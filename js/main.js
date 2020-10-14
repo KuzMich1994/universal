@@ -21,9 +21,9 @@ $(document).ready(function () {
 
   // If we need pagination
   pagination: {
-    el: ".photo__pagination",
-    bulletClass: "photo__bullet",
-    bulletActiveClass: "photo__bullet_active",
+    el: ".photo-slider__pagination",
+    bulletClass: "photo-slider__bullet",
+    bulletActiveClass: "photo-slider__bullet_active",
     clickable: true,
   },
 
