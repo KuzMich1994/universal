@@ -5,6 +5,17 @@ $(document).ready(function () {
     document.querySelector("body").classList.toggle("scroll-hidden")
   });
 
+  let tabItem = $('.main-info__tab');
+  let contentItem = $('.main-info__left');
+
+  tabItem.on('click', function(evt) {
+    let activeContent = $(this).attr('data-target');
+    tabItem.removeClass('main-info__tab_active')
+    contentItem.removeClass('main-info__left_active')
+    $(activeContent).addClass('main-info__left_active')
+    $(this).addClass('main-info__tab_active')
+  })
+
   let flagButton = document.querySelectorAll('.flag');
   flagButton.forEach(elem => elem.addEventListener('click', (evt) => {
   if (evt.target.classList.contains('flag_active')) {

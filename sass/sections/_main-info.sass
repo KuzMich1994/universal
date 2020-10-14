@@ -11,6 +11,7 @@
     overflow: hidden
     z-index: 1
   &__left
+    display: none
     position: relative
     width: 877px
     height: 570px
@@ -26,6 +27,8 @@
       bottom: 0
       background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
       z-index: -1
+    &_active
+      display: block
   &__image
     position: absolute
     top: 0
@@ -145,4 +148,6 @@
       color: $text-color-dark
       &_uppercase
         text-transform: uppercase
+    &_active
+      background-color: #F5F5F5
   

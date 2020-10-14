@@ -52,7 +52,7 @@
   <main class="main-info">
     <div class="container">
       <div class="main-info__wrapper">
-        <div class="main-info__left">
+        <div id="css" class="main-info__left main-info__left_active">
           <img src="img/main/main-bg.jpg" alt="#" class="main-info__image">
           <a href="#" class="main-info__profile">
             <img src="img/main/user-avatar.png" alt="Давид Гуров" class="main-info__avatar">
@@ -72,30 +72,110 @@
             </a>
           </div>
         </div>
+        <div id="javascript" class="main-info__left">
+          <img src="img/news/photo-large-1.png" alt="#" class="main-info__image">
+          <a href="#" class="main-info__profile">
+            <img src="img/main/user-avatar.png" alt="Давид Гуров" class="main-info__avatar">
+            <div class="main-info__user">
+              <span class="main-info__username">Давид Гуров</span>
+              <span class="main-info__text">Разработчик</span>
+            </div>
+          </a>
+          <div class="main-info__text-wrapper">
+            <div class="main-info__text-block">
+              <span class="main-info__subtitle">JavaScript</span>
+              <h1 class="main-info__title">Расширение Firefox защищает от атак</h1>
+            </div>
+            <a href="#" class="button main-info__button">
+              <span class="button__text">Читать далее</span>
+              <img src="img/Button-Arrow.svg" alt="Иконка: стрелка" class="button__arrow">
+            </a>
+          </div>
+        </div>
+        <div id="html" class="main-info__left">
+          <img src="img/news/photo-large-2.png" alt="#" class="main-info__image">
+          <a href="#" class="main-info__profile">
+            <img src="img/main/user-avatar.png" alt="Давид Гуров" class="main-info__avatar">
+            <div class="main-info__user">
+              <span class="main-info__username">Давид Гуров</span>
+              <span class="main-info__text">Разработчик</span>
+            </div>
+          </a>
+          <div class="main-info__text-wrapper">
+            <div class="main-info__text-block">
+              <span class="main-info__subtitle">JavaScript</span>
+              <h1 class="main-info__title">Расширение Yandex защищает от атак</h1>
+            </div>
+            <a href="#" class="button main-info__button">
+              <span class="button__text">Читать далее</span>
+              <img src="img/Button-Arrow.svg" alt="Иконка: стрелка" class="button__arrow">
+            </a>
+          </div>
+        </div>
+        <div id="web-design" class="main-info__left">
+          <img src="img/other-articles/slider-1.jpg" alt="#" class="main-info__image">
+          <a href="#" class="main-info__profile">
+            <img src="img/main/user-avatar.png" alt="Давид Гуров" class="main-info__avatar">
+            <div class="main-info__user">
+              <span class="main-info__username">Давид Гуров</span>
+              <span class="main-info__text">Разработчик</span>
+            </div>
+          </a>
+          <div class="main-info__text-wrapper">
+            <div class="main-info__text-block">
+              <span class="main-info__subtitle">JavaScript</span>
+              <h1 class="main-info__title">Расширение Opera защищает от атак</h1>
+            </div>
+            <a href="#" class="button main-info__button">
+              <span class="button__text">Читать далее</span>
+              <img src="img/Button-Arrow.svg" alt="Иконка: стрелка" class="button__arrow">
+            </a>
+          </div>
+        </div>
+        <div id="css-grid" class="main-info__left">
+          <img src="img/news/photo-large-6.png" alt="#" class="main-info__image">
+          <a href="#" class="main-info__profile">
+            <img src="img/main/user-avatar.png" alt="Давид Гуров" class="main-info__avatar">
+            <div class="main-info__user">
+              <span class="main-info__username">Давид Гуров</span>
+              <span class="main-info__text">Разработчик</span>
+            </div>
+          </a>
+          <div class="main-info__text-wrapper">
+            <div class="main-info__text-block">
+              <span class="main-info__subtitle">JavaScript</span>
+              <h1 class="main-info__title">Расширение Edge защищает от атак</h1>
+            </div>
+            <a href="#" class="button main-info__button">
+              <span class="button__text">Читать далее</span>
+              <img src="img/Button-Arrow.svg" alt="Иконка: стрелка" class="button__arrow">
+            </a>
+          </div>
+        </div>
         <div class="main-info__right">
           <div class="main-info__recommend">
             <h2 class="main-info__recommend-title">Рекомендуем</h2>
           </div>
           <div class="main-info__tabs-wrapper">
             <div class="main-info__tabs">
-              <div class="main-info__tab">
+              <div data-target="#css" class="main-info__tab main-info__tab_active">
                 <h3 class="main-info__tab-title main-info__tab-title_css">Css</h3>
                 <p class="main-info__tab-text">Как использовать <span class="main-info__tab-text_uppercase">css</span> float после
                   того, как вышел Flexbox</p>
               </div>
-              <div class="main-info__tab">
+              <div data-target="#javascript" class="main-info__tab">
                 <h3 class="main-info__tab-title main-info__tab-title_js">JavaScript</h3>
                 <p class="main-info__tab-text">На каком стандарте писать скрипты, если я фрилансер</p>
               </div>
-              <div class="main-info__tab">
+              <div data-target="#html" class="main-info__tab">
                 <h3 class="main-info__tab-title main-info__tab-title_html">Html</h3>
                 <p class="main-info__tab-text">Правильно вставляем картинку на сайт для Retina дисплея</p>
               </div>
-              <div class="main-info__tab">
+              <div data-target="#web-design" class="main-info__tab">
                 <h3 class="main-info__tab-title main-info__tab-title_web">Web Design</h3>
                 <p class="main-info__tab-text"><span class="main-info__tab-text_uppercase">Топ</span>-10 плагинов для Figma</p>
               </div>
-              <div class="main-info__tab">
+              <div data-target="#css-grid" class="main-info__tab">
                 <h3 class="main-info__tab-title main-info__tab-title_css-green">Css</h3>
                 <p class="main-info__tab-text">Возможности <span class="main-info__tab-text_uppercase">Css</span> Grid Layout,
                   которые

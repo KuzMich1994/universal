@@ -573,6 +573,7 @@ a:hover {
 }
 
 .main-info__left {
+  display: none;
   position: relative;
   width: 877px;
   height: 570px;
@@ -590,6 +591,10 @@ a:hover {
   bottom: 0;
   background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35));
   z-index: -1;
+}
+
+.main-info__left_active {
+  display: block;
 }
 
 .main-info__image {
@@ -758,6 +763,10 @@ a:hover {
 
 .main-info__tab-text_uppercase {
   text-transform: uppercase;
+}
+
+.main-info__tab_active {
+  background-color: #F5F5F5;
 }
 
 .articles {
