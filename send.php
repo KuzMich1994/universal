@@ -58,4 +58,4 @@ else {$result = "error";}
 
 // Отображение результата
 if (empty($email)) {header('location: thankyou.html');}
-else {header('location: newsletter_thanks.html');}
+else {header('location: thanks.html');}
