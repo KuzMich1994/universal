@@ -124,3 +124,44 @@
       &-button
         &::after
           display: none
+  .other-articles
+    &__wrapper
+      flex-wrap: wrap
+    &__cards
+      max-width: 700px
+      width: 100%
+    &__card
+      margin-bottom: 30px
+      width: 100%
+      background-position: right
+      &_small
+        max-width: 340px
+        width: 100%
+  .photo-slider
+    margin-bottom: 30px
+    max-width: 700px
+    width: 100%
+    &__pagination
+      left: 50% !important
+      transform: translateX(-50%)
+  .footer
+    &-grid
+      &__wrapper
+        width: 120px
+        &:last-child
+          width: 101px
+        &:nth-child(2)
+          width: 105px
+        &:nth-last-child(2)
+          width: 134px
+      &__item
+        line-height: 15px
+    &-links
+      &__ul
+        margin-left: 10px
+        max-width: 410px
+    &-bottom
+      &__description
+        max-width: 628px
+      &__copy
+        font-size: 12px
