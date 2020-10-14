@@ -21,7 +21,14 @@ $(document).ready(function () {
 
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
+    el: ".photo__pagination",
+    bulletClass: "photo__bullet",
+    bulletActiveClass: "photo__bullet_active",
+    clickable: true,
+  },
+
+  autoplay: {
+    delay: 2000,
   },
 
   })
