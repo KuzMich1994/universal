@@ -1,0 +1,151 @@
+.footer
+  padding-top: 60px
+  padding-bottom: 55px
+  background-color: #fff
+  &-top
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+  &__title
+    margin: 0
+    margin-bottom: 25px
+    flex-basis: 100%
+    text-align: center
+    flex-grow: 1
+    font-family: 'Roboto Slab', serif
+    font-style: normal
+    font-weight: bold
+    font-size: 40px
+    line-height: 50px
+    color: $title-color-dark
+  &__form
+    padding-bottom: 70px
+    display: flex
+    align-items: center
+  &__input
+    margin-right: 10px
+    padding: 10px 15px
+    width: 314px
+    height: 40px
+    border: 1px solid #D9DADB
+    border-radius: 5px
+    outline: none
+    &::placeholder
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $numbers-color
+  &__button
+    min-width: 136px
+    border: none
+    cursor: pointer
+    outline: none
+    &-text
+      font-family: 'Lato-Black', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+  &-grid
+    padding-bottom: 64px
+    display: grid
+    grid-template-columns: repeat(6, 1fr)
+    grid-template-rows: repeat(1, 240px)
+    &__wrapper
+      width: 195px
+      &:last-child
+        width: 165px
+      &_red
+        border-top: 5px solid #FF4F52
+      &_purple
+        border-top: 5px solid #AC8EE3
+      &_blue
+        border-top: 5px solid #4592FF
+      &_orange
+        border-top: 5px solid #FFA34D
+      &_green
+        border-top: 5px solid #3DC47E
+      &_greyblue
+        border-top: 5px solid #6E99AE
+    &__title
+      margin-top: 30px
+      margin-bottom: 25px
+      font-family: 'Lato-Black', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $title-color-dark
+    &__ul
+      margin: 0
+      padding: 0
+      list-style: none
+    &__item
+      margin-bottom: 15px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      &:last-child
+        margin-bottom: 0
+    &__link
+      color: $text-color-dark
+      text-decoration: none
+  &-links
+    padding-top: 30px
+    padding-bottom: 24px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border-top: 1px solid #D9DADB
+    border-bottom: 1px solid #D9DADB
+    &__logo
+      width: 50px
+      height: 50px
+    &__ul
+      padding: 0
+      margin: 0
+      margin-right: auto
+      margin-left: 30px
+      width: 463px
+      display: flex
+      justify-content: space-between
+      list-style: none
+    &__item
+      font-family: 'Lato-Black', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      text-transform: uppercase
+      letter-spacing: 0.5px
+    &__link
+      text-decoration: none
+      color: $title-color-dark
+    &__social
+      width: 205px
+      display: flex
+      justify-content: space-between
+      &-icon
+        width: 40px
+        height: 40px
+  &-bottom
+    padding-top: 40px
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    &__description
+      margin: 0
+      max-width: 750px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $numbers-color
+    &__copy
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $numbers-color
