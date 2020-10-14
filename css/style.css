@@ -1347,7 +1347,7 @@ a:hover {
 .news__left {
   display: flex;
   flex-direction: column;
-  margin-right: 29px;
+  margin-right: 26px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -1356,7 +1356,6 @@ a:hover {
   position: relative;
   padding: 25px;
   display: flex;
-  align-items: center;
   background-color: #ffffff;
 }
 
@@ -1430,18 +1429,31 @@ a:hover {
 }
 
 .news__card-bottom {
+  margin-top: 19px;
   display: flex;
   align-items: center;
 }
 
+.news__card-bottom_contry {
+  margin-top: 42px;
+}
+
 .news__card-date {
-  margin-right: 10px;
+  margin-right: 12px;
+}
+
+.news__card-date_contry {
+  margin-right: 8px;
 }
 
 .news__card-icon {
-  margin-right: 5px;
+  margin-right: 7px;
   width: 13px;
   height: 13px;
+}
+
+.news__card-icon_contry {
+  margin-right: 0;
 }
 
 .news__card-numbers {
@@ -1451,7 +1463,7 @@ a:hover {
 .news__card-flag {
   position: absolute;
   top: 25px;
-  right: 25px;
+  right: 27px;
   cursor: pointer;
 }
 
@@ -1512,6 +1524,7 @@ a:hover {
 
 .news__post-title {
   margin: 0;
+  margin-bottom: 4px;
   max-width: 143px;
   font-style: normal;
   font-weight: normal;
