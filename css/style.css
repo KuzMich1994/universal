@@ -2082,6 +2082,29 @@ a:hover {
   color: #939699;
 }
 
+.thanks {
+  padding: 200px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thanks__title {
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  color: #262D33;
+  text-align: center;
+}
+
+.thanks__button {
+  margin: auto;
+  width: 161px;
+  text-decoration: none;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
