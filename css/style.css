@@ -2738,6 +2738,10 @@ a:hover {
   text-decoration: none;
 }
 
+.main-display__flag {
+  left: 75px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -2846,6 +2850,9 @@ a:hover {
   }
   .footer-grid__wrapper:last-child {
     max-width: 135px;
+  }
+  .main-display__container {
+    max-width: 750px;
   }
 }
 
@@ -3056,6 +3063,15 @@ a:hover {
   .footer-bottom__copy {
     font-size: 12px;
   }
+  .main-display__container {
+    max-width: 650px;
+  }
+  .main-display__title {
+    font-size: 42px;
+  }
+  .main-display__flag {
+    left: 92%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -3068,7 +3084,7 @@ a:hover {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 99;
+    z-index: 101;
   }
   .header__logo {
     width: 120px;
@@ -3326,6 +3342,24 @@ a:hover {
     text-align: center;
     margin-bottom: 15px;
   }
+  .main-display {
+    padding-top: 105px;
+  }
+  .main-display__container {
+    max-width: 550px;
+    width: 90%;
+  }
+  .main-display__flag {
+    left: 90%;
+  }
+  .main-display__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .main-display__description {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 @media (max-width: 568px) {
@@ -3455,6 +3489,28 @@ a:hover {
   }
   #email-error {
     left: 10px;
+  }
+  .main-display__top {
+    flex-direction: column;
+  }
+  .main-display__subtitle {
+    margin-bottom: 20px;
+  }
+  .main-display__title {
+    font-size: 24px;
+  }
+  .main-display__flag {
+    top: 260px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .main-display__links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-display__link {
+    margin-bottom: 15px;
+    margin-right: 0;
   }
 }
 
