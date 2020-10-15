@@ -1,0 +1,329 @@
+.article
+  padding-top: 67px
+  padding-bottom: 60px
+  background-color: #fff
+  &__tags
+    padding-top: 28px
+    padding-bottom: 57px
+    margin-left: 5px
+    display: flex
+    flex-wrap: wrap
+    &-button
+      padding: 5px 15px 5px 14px
+      margin-right: 9px
+      background-color: transparent
+      border: 1px solid #D9DADB
+      border-radius: 5px
+      cursor: pointer
+      outline: none
+      &:last-child
+        margin-right: 0
+      &:hover
+        background-color: #4592FF
+        border: 1px solid transparent
+        color: #fff
+      &-text
+        font-family: 'Lato-Black', sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+  &__wrapper
+    position: relative
+    &_first
+      margin-top: -5px
+      height: 90px
+      display: flex
+      justify-content: space-between
+    &_bottom
+      position: relative
+  &__text
+    margin: 0
+    margin-left: 5px
+    margin-bottom: 30px
+    max-width: 623px
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 30px
+    &_first
+      margin-left: 0
+      &::first-letter
+        margin-top: 10px
+        margin-right: 10px
+        font-family: 'Lato-Black', sans-serif
+        font-weight: normal
+        font-size: 100px
+        line-height: 75px
+        float: left
+        color: #4592FF
+    &_mb-15
+      margin-bottom: 15px
+    &_mb-45
+      margin-bottom: 45px
+    &_mb-58
+      margin-bottom: 58px
+  &__profile
+    position: absolute
+    right: 4px
+    top: -163px
+    z-index: 100
+    padding: 35px 25px 0 25px
+    display: flex
+    flex-direction: column
+    align-items: center
+    border-radius: 10px
+    border: 1px solid #D9DADB
+    background-color: #fff
+    &-image
+      margin-bottom: 15px
+      width: 90px
+      height: 90px
+      border-radius: 50%
+      object-fit: cover
+    &-name
+      margin-bottom: 5px
+      width: 213px
+      max-width: 220px
+      font-family: 'Roboto Slab', serif
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      text-align: center
+      color: $title-color-dark
+    &-subtitle
+      margin-bottom: 15px
+      width: 213px
+      max-width: 220px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text-color-dark
+      text-align: center
+    &-articles
+      margin-bottom: 20px
+      width: 213px
+      max-width: 220px
+      font-family: 'Lato-Black', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $title-color-dark
+      text-align: center
+    &-button
+      position: relative
+      font-family: 'Lato-Black', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      padding: 15px 0
+      width: 100%
+      text-align: center
+      color: $title-color-dark
+      text-decoration: none
+      &::before
+        position: absolute
+        top: 0
+        left: -25px
+        right: 0
+        content: ''
+        width: 263px
+        height: 1px
+        background-color: #D9DADB
+  &__title
+    margin: 0
+    margin-left: 5px
+    margin-bottom: 30px
+    font-family: 'Roboto Slab', serif
+    font-style: normal
+    font-weight: bold
+    font-size: 25px
+    line-height: 30px
+    &-wrapper
+      position: relative
+      padding-top: 65px
+      padding-bottom: 16px
+      max-width: 624px
+      z-index: 1
+    &-icon
+      position: absolute
+      top: 45px
+      left: -15px
+      width: 70px
+      height: 70px
+      z-index: -1
+  &__card
+    position: absolute
+    bottom: 36px
+    right: 4px
+    width: 263px
+    display: flex
+    flex-direction: column
+    &-title
+      margin-top: 0
+      margin-bottom: 20px
+      font-family: 'Roboto Slab', serif
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      color: $title-color-dark
+    &-image
+      margin-bottom: 15px
+      width: 263px
+      height: 180px
+      object-fit: cover
+      border-radius: 10px
+    &-subtitle
+      margin: 0
+      margin-bottom: 5px
+      max-width: 170px
+      font-family: 'Roboto Slab', serif
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+      color: $title-color-dark
+    &-description
+      margin: 0
+      margin-bottom: 20px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text-color-dark
+    &-bottom
+      display: flex
+      align-items: center
+      &-icon
+        width: 15px
+        height: 15px
+        margin-right: 5px
+      &-numbers
+        margin-right: 10px
+  &__repost
+    padding: 30px 0
+    margin-left: 5px
+    max-width: 653px
+    border-top: 1px solid #D9DADB
+    &-title
+      margin: 0
+      margin-bottom: 25px
+      max-width: 458px
+      font-family: 'Roboto Slab', serif
+      font-style: normal
+      font-weight: bold
+      font-size: 25px
+      line-height: 30px
+    &-button
+      min-width: 131px
+      max-width: 230px
+      margin-right: 14px
+      border: none
+      outline: none
+      cursor: pointer
+      &:hover
+        background-color: #3387FF
+    &-icon
+      width: 20px
+      height: 20px
+      margin-right: 8px
+    &-text
+      font-family: 'Lato-Black', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      margin-right: 8px
+    &-numbers
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #BBC6FF
+      &_red
+        color: #FFC4C9
+      &_light
+        color: #C5E4FC
+  &__buttons
+    display: flex
+.atricle-container
+  max-width: 956px
+  margin: auto
+.article-slider
+  position: relative
+  margin-bottom: 45px
+  width: 100%
+  height: 625px
+  border-radius: 10px
+  overflow: hidden
+  &__item
+    height: 555px
+  &__image
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &__bottom
+    margin-top: -4px
+    display: flex
+    border: 1px solid #D9DADB
+    border-radius: 0 0 10px 10px
+    &-text
+      padding: 25px 35px 23px 35px
+      width: 877px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text-color-dark
+      border-right: 1px solid #D9DADB
+    &-profile
+      padding: 10px 35px 13px 30px
+      display: flex
+      align-items: center
+    &-img
+      width: 45px
+      height: 45px
+      margin-right: 10px
+      border-radius: 50%
+    &-photograph
+      display: flex
+      flex-direction: column
+    &-name
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text-color-dark
+    &-subtitle
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 14px
+      color: $numbers-color
+  &__button
+    position: absolute
+    top: 39.5%
+    width: 60px
+    height: 60px
+    background-color: transparent
+    border: none
+    outline: none
+    cursor: pointer
+    z-index: 99
+    &_prev
+      background: url(../img/article/Arrow-prev.svg)
+      background-size: 60px
+      background-repeat: no-repeat
+      background-position: center
+      left: 35px
+    &_next
+      background: url(../img/article/Arrow-next.svg)
+      background-size: 60px
+      background-repeat: no-repeat
+      background-position: center
+      right: 35px

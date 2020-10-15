@@ -25,7 +25,7 @@ $(document).ready(function () {
   }
   }))
 
-  var mySwiper = new Swiper('.swiper-container', {
+  var mySwiper = new Swiper('.photo-slider', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -58,6 +58,25 @@ $(document).ready(function () {
       }
     }
   })
+
+  var mySwiper = new Swiper('.article-slider', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+    // Navigation arrows
+  navigation: {
+    nextEl: '.article-slider__button_next',
+    prevEl: '.article-slider__button_prev',
+  },
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+
+  })
+
 });
 
 
