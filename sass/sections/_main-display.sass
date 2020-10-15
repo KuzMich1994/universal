@@ -1,0 +1,105 @@
+.main-display
+  position: relative
+  padding-top: 60px
+  padding-bottom: 71px
+  background: url(../img/news/photo-large-1.png)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  z-index: 99
+  &::after
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    content: ''
+    background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75))
+    z-index: -1
+  &__container
+    margin: auto
+    max-width: 946px
+  &__top
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__subtitle
+    font-family: 'Lato-Black', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: #4592FF
+    text-transform: uppercase
+    letter-spacing: 0.5px
+  &__links
+    display: flex
+    align-items: center
+  &__link
+    display: flex
+    align-items: center
+    text-decoration: none
+    color: #ffffff
+    &-text
+      font-family: 'Lato-Black', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+    &_home
+      margin-right: 30px
+    &_prev
+      margin-right: 20px
+  &__icon
+    width: 20px
+    height: 20px
+    &_home
+      margin-right: 5px
+    &_prev
+      margin-right: 5px
+    &_next
+      margin-left: 5px
+  &__text
+    margin-top: 52px
+    margin-bottom: 43px
+  &__title
+    margin-top: 0
+    margin-bottom: 30px
+    max-width: 750px
+    font-family: 'Roboto Slab', serif
+    font-style: normal
+    font-weight: bold
+    font-size: 55px
+    line-height: 70px
+    color: $text-color-light
+  &__description
+    margin: 0
+    max-width: 632px
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 30px
+    color: $text-color-light
+    opacity: 0.85
+  &__bottom
+    display: flex
+    align-items: center
+    &-icon
+      width: 15px
+      height: 15px
+      &_clock
+        margin-right: 5px
+      &_heart
+        margin-right: 5px
+      &_comment
+        margin-right: 5px
+  &__date
+    margin-right: 20px
+  &__numbers
+    margin-right: 20px
+    &:last-child
+      margin-right: 0
+  &__flag
+    position: absolute
+    top: 152px
+    left: 117px

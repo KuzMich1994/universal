@@ -23,6 +23,8 @@
         background-color: $dark
         overflow-y: scroll
         z-index: 99
+        &_light
+          background-color: #fff
         &_visible
           display: flex
     &-nav
@@ -60,10 +62,14 @@
       background-color: $dark
       cursor: pointer
       outline: none
+      &_light
+        background-color: #fff
       &__line
         width: 16px
         height: 1px
         background-color: $text-color-light
+        &_light
+          background-color: $dark
   .main-info
     margin-top: -1px
     &__wrapper
