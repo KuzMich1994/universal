@@ -1,4 +1,7 @@
 @media (max-width: 992px)
+  a
+    &:hover
+      text-decoration: none
   .container
     max-width: 700px
   .header
@@ -124,6 +127,8 @@
       &-button
         &::after
           display: none
+        &:hover
+          color: $title-color-dark
   .other-articles
     &__wrapper
       flex-wrap: wrap
@@ -144,7 +149,13 @@
     &__pagination
       left: 50% !important
       transform: translateX(-50%)
+    &__button
+      &:hover
+        background-color: #4592FF
   .footer
+    &__button
+      &:hover
+        background-color: #4592FF
     &-grid
       &__wrapper
         width: 120px

@@ -66,6 +66,10 @@
   display: flex
   flex-direction: column
   padding: 35px 0 13px 35px
+  &__card
+    &-link
+      text-decoration: none
+      color: $title-color-dark
   &__text
     max-width: 238px
     &::after
@@ -91,8 +95,6 @@
     font-size: 25px
     line-height: 30px
     color: $title-color-dark
-    &-link
-      text-decoration: none
   &__description
     margin-top: 0
     margin-bottom: 49px
@@ -105,6 +107,7 @@
     display: flex
     align-items: center
     text-decoration: none
+    color: $text-color-dark
   &__avatar
     margin-right: 10px
     width: 30px
@@ -135,6 +138,10 @@
     height: 15px
 .web-design
   padding: 0 25px 25px 25px
+  &__card
+    &-link
+      text-decoration: none
+      color: $text-color-light
   &__text
     margin-top: 160px
   &__subtitle
@@ -163,6 +170,7 @@
     display: flex
     align-items: center
     text-decoration: none
+    color: inherit
   &__avatar
     margin-right: 10px
     width: 45px
@@ -221,6 +229,7 @@
     color: $title-color-dark
   &__link
     text-decoration: none
+    color: $title-color-dark
 .other-article
   padding: 25px 25px 30px 25px
   &__title
@@ -234,6 +243,7 @@
     color: $title-color-dark
   &__link
     text-decoration: none
+    color: inherit
   &__description
     margin: 0
     margin-bottom: 10px

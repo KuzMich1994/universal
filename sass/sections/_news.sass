@@ -12,7 +12,7 @@
     overflow: hidden
   &__card
     position: relative
-    padding: 25px
+    padding: 25px 25px 21px 23px
     display: flex
     background-color: #ffffff
     &::after
@@ -46,6 +46,7 @@
         color: #AC8EE3
     &-link
       text-decoration: none
+      color: inherit
     &-title
       max-width: 437px
       margin-top: 15px
@@ -67,7 +68,6 @@
     &-bottom
       margin-top: 19px
       display: flex
-      align-items: center
       &_contry
         margin-top: 42px
     &-date
@@ -87,6 +87,12 @@
       top: 25px
       right: 27px
       cursor: pointer
+    &-button
+      padding: 0
+      border: 0
+      background-color: inherit
+      cursor: pointer
+      outline: none
   &__right
     padding: 20px 25px 0 25px
     background-color: #fff
@@ -167,3 +173,7 @@
         background-color: #D9DADB
       &:hover
         color: $primary
+    &-link
+      display: flex
+      text-decoration: none
+      color: inherit
