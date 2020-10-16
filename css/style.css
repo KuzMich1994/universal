@@ -1402,6 +1402,12 @@ a:hover {
   margin-right: 0;
 }
 
+.tags__button:hover {
+  background-color: #4592FF;
+  border: 1px solid transparent;
+  color: #ffffff;
+}
+
 .tags__button-text {
   font-family: 'Lato-Black', sans-serif;
   font-style: normal;
@@ -3005,6 +3011,11 @@ a:hover {
     margin-top: 0;
     margin-bottom: 20px;
   }
+  .tags__button:hover {
+    background-color: transparent;
+    border: 1px solid #D9DADB;
+    color: #262D33;
+  }
   .features {
     display: none;
   }
@@ -3146,6 +3157,14 @@ a:hover {
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .article__tags-button:hover {
+    background-color: transparent;
+    border: 1px solid #D9DADB;
+    color: #262D33;
+  }
+  .article__repost-button:hover {
+    background-color: #4592FF;
   }
 }
 
