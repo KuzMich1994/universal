@@ -2767,6 +2767,7 @@ a:hover {
 }
 
 .more-cards {
+  background-color: #F5F5F5;
   padding-top: 60px;
   padding-bottom: 84px;
 }
@@ -2864,7 +2865,8 @@ a:hover {
 }
 
 .comments__button-bottom {
-  margin-top: 30px;
+  margin-top: 2px;
+  min-height: 48px;
   display: flex;
   flex-basis: 100%;
   justify-content: center;
@@ -2877,6 +2879,7 @@ a:hover {
 }
 
 .comments__button-icon {
+  margin-left: 26px;
   margin-right: 7px;
   width: 15px;
   height: 15px;
@@ -3003,6 +3006,74 @@ a:hover {
 .comments__bottom-link {
   text-decoration: none;
   color: #262D33;
+}
+
+.comment-block {
+  padding: 30px 40px 35px 30px;
+  margin-top: 60px;
+  width: 750px;
+  display: flex;
+  align-items: center;
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+.comment-block__avatar {
+  margin-bottom: 70px;
+  margin-right: 10px;
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.comment-block__form {
+  position: relative;
+}
+
+.comment-block__form-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  color: #262D33;
+}
+
+.comment-block__form-message {
+  position: absolute;
+  width: 560px;
+  height: 110px;
+  left: 23px;
+  top: 50px;
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+.comment-block__form-button {
+  padding-left: 16px;
+  padding-right: 16px;
+  min-width: 137px;
+  margin-top: 13px;
+  margin-left: 13px;
+  font-family: 'Lato-Black', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.comment-block__form-icon {
+  margin-left: 5px;
+  width: 20px;
+  height: 20px;
 }
 
 .thanks {
