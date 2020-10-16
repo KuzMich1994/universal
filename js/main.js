@@ -77,6 +77,12 @@ $(document).ready(function () {
 
   })
 
+  let showComment = $('.comments__button-bottom');
+  let hiddenComments = $('.comments__user-comment');
+  showComment.on('click', function(evt) {
+    hiddenComments.removeClass('comments__user-comment_hidden')
+  })
+  
 });
 
 
