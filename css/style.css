@@ -477,6 +477,18 @@ a:hover {
   outline: none;
 }
 
+#message-error {
+  position: absolute;
+  bottom: 40px;
+  left: 15px;
+  color: red;
+  font-family: 'Lato-Black', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+}
+
 .header {
   background-color: #262D33;
   padding: 15px 0;
@@ -3997,6 +4009,7 @@ a:hover {
     font-size: 26px;
   }
   .footer__form {
+    padding-bottom: 20px;
     height: 120px;
     flex-wrap: wrap;
     justify-content: center;
@@ -4022,7 +4035,8 @@ a:hover {
     margin-bottom: 0;
   }
   #email-error {
-    left: 10px;
+    left: 50px;
+    top: 40px;
   }
   .main-display__top {
     flex-direction: column;

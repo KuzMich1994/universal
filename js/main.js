@@ -82,6 +82,22 @@ $(document).ready(function () {
   showComment.on('click', function(evt) {
     hiddenComments.removeClass('comments__user-comment_hidden')
   })
+
+  $('.message').validate({
+    errorClass: "error",
+    rules: {
+      message: {
+        required: true,
+        minlength: 100,
+      },
+    },
+    messages: {
+      message: {
+        required: "Введите сообщение",
+        minlength: jQuery.validator.format("Не менее {0} символов!")
+      }
+    }
+  })
   
 });
 
