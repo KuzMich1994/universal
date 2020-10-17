@@ -823,6 +823,22 @@ a:hover {
   z-index: 99;
 }
 
+.main-display_2 {
+  background: url(../img/article/card-photo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 99;
+}
+
+.main-display_3 {
+  background: url(../img/news/photo-large-4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 99;
+}
+
 .main-display::after {
   position: absolute;
   top: 0;
@@ -967,6 +983,7 @@ a:hover {
   position: absolute;
   top: 152px;
   left: 118px;
+  cursor: pointer;
 }
 
 .articles {
@@ -1784,7 +1801,6 @@ a:hover {
 
 .article__card-bottom {
   display: flex;
-  align-items: center;
 }
 
 .article__card-bottom-icon {
@@ -1795,6 +1811,11 @@ a:hover {
 
 .article__card-bottom-numbers {
   margin-right: 10px;
+}
+
+.article__card-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .article__repost {
