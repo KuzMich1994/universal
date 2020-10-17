@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-nav">
+        <a href="/universal" class="header__logo">
+          <img src="img/header/main-logo.svg" alt="Universal" class="header-nav__logo">
+        </a>
+        <div class="header__wrapper header__wrapper_mobile">
+          <ul class="header-nav__ul header-nav__ul_mobile_visible">
+            <li class="header-nav__item_mobile_visible">
+              <form action="#" class="header-nav__search">
+                <input type="text" class="header-nav__input" placeholder="Поиск">
+                <button class="header-nav__button">
+                  <img src="img/header/Search-icon.svg" alt="Иконка: поиск">
+                </button>
+              </form>
+            </li>
+            <li class="header-nav__item"><a href="#" class="header-nav__link">Статьи</a></li>
+            <li class="header-nav__item"><a href="#" class="header-nav__link">Новости</a></li>
+            <li class="header-nav__item"><a href="#" class="header-nav__link">Курсы</a></li>
+            <li class="header-nav__item"><a href="#" class="header-nav__link">HTML</a></li>
+            <li class="header-nav__item"><a href="#" class="header-nav__link">CSS</a></li>
+            <li class="header-nav__item"><a href="#" class="header-nav__link">JavaScript</a></li>
+            <li class="header-nav__item"><a href="#" class="header-nav__link">Web Design</a></li>
+          </ul>
+          </div>
+        <form action="#" class="header-nav__search header-nav__search_mobile_hidden">
+          <input type="text" class="header-nav__input" placeholder="Поиск">
+          <button class="header-nav__button">
+            <img src="img/header/Search-icon.svg" alt="Иконка: поиск">
+          </button>
+        </form>
+        <button class="menu-button header-nav__menu-button">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="thanks">
+    <div class="container">
+      <h1 class="thanks__title">Сообщение отправлено</h1>
+      <a href="/universal" class="button thanks__button">Назад</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <h2 class="footer__title">Подпишитесь на нашу рассылку</h2>
+        <form action="send.php" method="POST" class="footer__form form">
+          <input type="email" name="email" class="footer__input" placeholder="Email" required>
+          <button class="button footer__button">
+            <span class="footer__button-text">Подписаться</span>
+          </button>
+        </form>
+      </div>
+      <div class="footer-grid">
+        <div class="footer-grid__wrapper footer-grid__wrapper_red">
+          <h3 class="footer-grid__title">Новости</h3>
+          <ul class="footer-grid__ul">
+            <li class="footer-grid__item"><a href="#" class="footer-grid__link">Обновления</a></li>
+            <li class="footer-grid__item"><a href="#" class="footer-grid__link">Экспресс</a></li>
+            <li class="footer-grid__item"><a href="#" class="footer-grid__link">Politics</a></li>
+            <li class="footer-grid__item"><a href="#" class="footer-grid__link">Solar Eclipse</a></li>
+          </ul>
+        </div>
+        <div class="footer-grid__wrapper footer-grid__wrapper_purple">
+          <h3 class="footer-grid__title">Статьи</h3>
+          <ul class="footer-grid__ul">
+            <li class="footer-grid__item"><a href="#" class="footer-grid__link">HTML</a></li>
+            <li class="footer-grid__item"><a href="#" class="footer-grid__link">CSS</a></li>
+            <li class="footer-grid__item"><a href="#" class="footer-grid__link">JavaScript</a></li>
+            <li class="footer-grid__item"><a href="#" class="footer-grid__link">Web Design</a></li>
+          </ul>
+        </div>
+        <div class="footer-grid__wrapper footer-grid__wrapper_blue">
+          <h3 class="footer-grid__title">Видеоуроки</h3>
+          <ul class="footer-grid__ul">
+            <li class="footer-grid__item"><a href="#" class="footer-grid__link">Скринкасты</a></li>
+            <li class="footer-grid__item"><a href="#" class="footer-grid__link">Уроки</a></li>
+            <li class="footer-grid__item"><a href="#" class="footer-grid__link">Вебинары</a></li>
+          </ul>
+        </div>
+        <div class="footer-grid__wrapper footer-grid__wrapper_orange">
+          <h3 class="footer-grid__title">Курсы</h3>
+          <ul class="footer-grid__ul">
+            <li class="footer-grid__item"><a href="#" class="footer-grid__link">Платные интенсивы</a></li>
+            <li class="footer-grid__item"><a href="#" class="footer-grid__link">Бесплатные стримы</a></li>
+            <li class="footer-grid__item"><a href="#" class="footer-grid__link">Мастер-классы</a></li>
+            <li class="footer-grid__item"><a href="#" class="footer-grid__link">Менторство</a></li>
+            <li class="footer-grid__item"><a href="#" class="footer-grid__link">Буткемпы</a></li>
+          </ul>
+        </div>
+        <div class="footer-grid__wrapper footer-grid__wrapper_green">
+          <h3 class="footer-grid__title">Информация</h3>
+          <ul class="footer-grid__ul">
+            <li class="footer-grid__item"><a href="#" class="footer-grid__link">Политика данных</a></li>
+            <li class="footer-grid__item"><a href="#" class="footer-grid__link">Оферта сайта</a></li>
+            <li class="footer-grid__item"><a href="#" class="footer-grid__link">Реквизиты</a></li>
+            <li class="footer-grid__item"><a href="#" class="footer-grid__link">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-grid__wrapper footer-grid__wrapper_greyblue">
+          <h3 class="footer-grid__title">Категории</h3>
+          <ul class="footer-grid__ul">
+            <li class="footer-grid__item"><a href="#" class="footer-grid__link">Популярное</a></li>
+            <li class="footer-grid__item"><a href="#" class="footer-grid__link">Горячее</a></li>
+            <li class="footer-grid__item"><a href="#" class="footer-grid__link">Подборки</a></li>
+            <li class="footer-grid__item"><a href="#" class="footer-grid__link">Мнения</a></li>
+            <li class="footer-grid__item"><a href="#" class="footer-grid__link">Карьера</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="/universal" class="footer-links__link"><img src="img/footer/footer-logo.svg" alt="Логотип" class="footer-links__logo"></a>
+        <ul class="footer-links__ul">
+          <li class="footer-links__item"><a href="#" class="footer-links__link">Контакты</a></li>
+          <li class="footer-links__item"><a href="#" class="footer-links__link">Работа у нас</a></li>
+          <li class="footer-links__item"><a href="#" class="footer-links__link">Реклама</a></li>
+          <li class="footer-links__item"><a href="#" class="footer-links__link">Партнерство</a></li>
+        </ul>
+        <div class="footer-links__social">
+          <a href="#" class="footer-links__social-link"><img src="img/facebook.svg" alt="" class="footer-links__social-icon"></a>
+          <a href="#" class="footer-links__social-link"><img src="img/twitter.svg" alt="" class="footer-links__social-icon"></a>
+          <a href="#" class="footer-links__social-link"><img src="img/youtube.svg" alt="" class="footer-links__social-icon"></a>
+          <a href="#" class="footer-links__social-link"><img src="img/inst.svg" alt="" class="footer-links__social-icon"></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-bottom__description">Universal — это онлайн издание, в котором мы публикуем полезные материалы о веб разработке: статьи, новости, видеоуроки,
+        подборки, ссылки и курсы. Материалы на сайте бесплатны, но при копировании, указывайте ссылку.</p>
+        <span class="footer-bottom__copy">&copy; 2020 Universal Magazine</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

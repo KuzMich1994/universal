@@ -9,7 +9,7 @@ $email = $_POST['email'];
 $message = $_POST['message'];
 
 // Формирование самого письма
-if (empty($email)) {$title = "Новое обращение Best Tour Plan";
+if (empty($email)) {$title = "Комментарий Universal";
 $body = "
 <h2>Новое письмо</h2>
 <b>Сообщение:</b><br>$message
@@ -57,5 +57,5 @@ else {$result = "error";}
 }
 
 // Отображение результата
-if (empty($email)) {header('location: thankyou.html');}
+if (empty($email)) {header('location: send-message.html');}
 else {header('location: thanks.html');}
