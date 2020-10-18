@@ -1,7 +1,7 @@
 .main-display
   position: relative
   padding-top: 60px
-  padding-bottom: 71px
+  padding-bottom: 68px
   background: url(../img/news/photo-large-1.png)
   background-repeat: no-repeat
   background-size: cover
@@ -95,7 +95,6 @@
     opacity: 0.85
   &__bottom
     display: flex
-    align-items: center
     &-icon
       width: 15px
       height: 15px
@@ -105,6 +104,16 @@
         margin-right: 5px
       &_comment
         margin-right: 5px
+    &-link
+      margin-right: 5px
+      color: #BCBFC2
+      &:hover
+        color: $primary
+  &__button
+    margin-right: 7px
+    padding: 0
+    width: 15px
+    height: 15px
   &__date
     margin-right: 20px
   &__numbers

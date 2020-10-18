@@ -198,21 +198,23 @@
     <div class="container">
       <div class="features">
         <div class="features__wrapper">
-          <h2 class="features__title features__title_slider">25 способов настроить слайдер</h2>
-          <img src="img/articles/feature-1.png" alt="Фото: 25 способов настроить слайдер" class="features__img">
+          <h2 class="features__title features__title_slider"><a href="#" class="features__link">25 способов настроить слайдер</a></h2>
+          <a href="#" class="features__link"><img src="img/articles/feature-1.png" alt="Фото: 25 способов настроить слайдер" class="features__img"></a>
         </div>
         <div class="features__wrapper">
-          <h2 class="features__title">Главные фишки фрилансера</h2>
-          <img src="img/articles/feature-2.png" alt="Фото: Главные фишки фрилансера" class="features__img">
+          <h2 class="features__title"><a href="#" class="features__link">Главные фишки фрилансера</a></h2>
+          <a href="#" class="features__link"><img src="img/articles/feature-2.png" alt="Фото: Главные фишки фрилансера" class="features__img"></a>
         </div>
         <div class="features__wrapper">
-          <h2 class="features__title features__title_pomodoro">Техника управления временем "Помодоро"</h2>
-          <img src="img/articles/feature-3.png" alt="Фото: Техника управления временем ''Помодоро''"
-            class="features__img">
+          <h2 class="features__title features__title_pomodoro"><a href="#" class="features__link">Техника управления временем "Помодоро"</a></h2>
+          <a href="#" class="features__link">
+            <img src="img/articles/feature-3.png" alt="Фото: Техника управления временем ''Помодоро''"
+              class="features__img">
+          </a>
         </div>
         <div class="features__wrapper">
-          <h2 class="features__title">Что нужно знать о Git и&nbsp;GitHub</h2>
-          <img src="img/articles/feature-4.png" alt="Фото: Что нужно знать о Git и GitHub" class="features__img">
+          <h2 class="features__title"><a href="#" class="features__link">Что нужно знать о Git и&nbsp;GitHub</a></h2>
+          <a href="#" class="features__link"><img src="img/articles/feature-4.png" alt="Фото: Что нужно знать о Git и GitHub" class="features__img"></a>
         </div>
       </div>
       <div class="articles-grid">
@@ -226,13 +228,19 @@
                 готовы.</p>
             </div>
           </a>
-          <a href="/universal/article.html#comments" class="dreamwork__link">
+          <div class="dreamwork__wrapper">
             <img src="img/articles/user-img.png" alt="Аватар пользователя" class="dreamwork__avatar">
             <span class="dreamwork__username">Инна Квашова:</span>
             <span class="dreamwork__comment">Каждый разработчик мечтает переехать в...</span>
-            <img src="img/articles/Comment.svg" alt="Иконка: сообщение" class="dreamwork__icon">
+            <a href="#" class="dreamwork__link">
+              <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z"
+                  fill="currentColor" />
+              </svg>
+            </a>
             <span class="numbers dreamwork__comment-numbers">342</span>
-          </a>
+          </div>
         </div>
         <div class="web-design articles__card articles__card_web-design">
           <a href="/universal/article.html" class="web-design__card-link">
@@ -241,19 +249,31 @@
               <h2 class="web-design__title">Где взять реальные проекты для портфолио</h2>
             </div>
           </a>
-          <a href="/universal/article.html#comments" class="web-design__link">
+          <div class="web-design__wrapper">
             <img src="img/articles/user-img.png" alt="Аватар пользователя" class="web-design__avatar">
             <div class="web-design__link-text">
               <span class="web-design__username">Сара Женникова</span>
               <div class="web-design__comment">
                 <time class="date web-design__date" datetime="2020-09-25">25 сентября</time>
-                <img src="img/articles/Comment.svg" alt="Иконка" class="web-design__icon">
+                <a href="/universal/article.html#comments" class="web-design__link">
+                  <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z"
+                      fill="currentColor" />
+                  </svg>
+                </a>
                 <span class="numbers web-design__numbers">16</span>
-                <img src="img/articles/heart.svg" alt="Иконка" class="web-design__icon">
+                <button class="heart web-design__button">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.8391 1.96033C11.1701 1.2119 10.2807 0.800049 9.33459 0.800049C8.38831 0.800049 7.59423 1.2119 6.925 1.96033L6.49998 2.63921L6.075 1.96033C5.40597 1.2119 4.61164 0.800049 3.66557 0.800049C2.71953 0.800049 1.82982 1.2119 1.16086 1.96033C-0.220288 3.50554 -0.220288 6.01968 1.16086 7.56429L6.10991 12.3207C6.19083 12.4116 6.29157 12.4672 6.39682 12.4886C6.43211 12.4964 6.46761 12.5 6.50317 12.5C6.64318 12.5 6.78341 12.4403 6.89004 12.3207L11.8391 7.56429C13.2203 6.01968 13.2203 3.50554 11.8391 1.96033Z"
+                      fill="currentColor" />
+                  </svg>
+                </button>
                 <span class="numbers web-design__numbers">832</span>
               </div>
             </div>
-          </a>
+          </div>
           <span class="web-design__label">Популярное</span>
         </div>
         <div class="tools articles__card articles__card_tools">
@@ -300,10 +320,10 @@
             <h2 class="download__title">Чек-лист сдачи верстки вашему заказчику</h2>
             <span class="download__subtitle">PDF. 125 Мб</span>
           </div>
-          <div class="download__wrapper">
+          <button class="download__button">
             <img src="img/articles/Download.svg" alt="Иконка" class="download__icon">
-            <a href="#" class="download__link">Скачать</a>
-          </div>
+            Скачать
+          </button>
         </div>
         <div class="tags articles__card articles__card_tags">
           <h2 class="tags__title">Теги</h2>
@@ -364,10 +384,21 @@
 
               <div class="news__card-bottom">
                 <span class="date news__card-date">6 августа</span>
-                <a href="/universal/article.html#comments"><img src="img/articles/Comment.svg" alt="Иконка" class="news__card-icon"></a>
+                <a href="/universal/article.html#comments" class="news__card-bottom-link">
+                  <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z"
+                      fill="currentColor" />
+                  </svg>
+                </a>
                 <span class="numbers news__card-numbers">342</span>
-                <button class="news__card-button"><img src="img/articles/heart.svg" alt="Иконка"
-                    class="news__card-icon"></button>
+                <button class="heart news__card-button">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.8391 1.96033C11.1701 1.2119 10.2807 0.800049 9.33459 0.800049C8.38831 0.800049 7.59423 1.2119 6.925 1.96033L6.49998 2.63921L6.075 1.96033C5.40597 1.2119 4.61164 0.800049 3.66557 0.800049C2.71953 0.800049 1.82982 1.2119 1.16086 1.96033C-0.220288 3.50554 -0.220288 6.01968 1.16086 7.56429L6.10991 12.3207C6.19083 12.4116 6.29157 12.4672 6.39682 12.4886C6.43211 12.4964 6.46761 12.5 6.50317 12.5C6.64318 12.5 6.78341 12.4403 6.89004 12.3207L11.8391 7.56429C13.2203 6.01968 13.2203 3.50554 11.8391 1.96033Z"
+                      fill="currentColor" />
+                  </svg>
+                  </button>
                 <span class="numbers news__card-numbers">830</span>
               </div>
               <div class="flag news__card-flag">
@@ -393,10 +424,21 @@
                   берут в расчет, что лучшее обучение — это практика.</a></p>
               <div class="news__card-bottom">
                 <span class="date news__card-date">7 октября</span>
-                <a href="/universal/article.html#comments"><img src="img/articles/Comment.svg" alt="Иконка" class="news__card-icon"></a>
+                <a href="/universal/article.html#comments" class="news__card-bottom-link">
+                  <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z"
+                      fill="currentColor" />
+                  </svg>
+                </a>
                 <span class="numbers news__card-numbers">27</span>
-                <button class="news__card-button"><img src="img/articles/heart.svg" alt="Иконка"
-                    class="news__card-icon"></button>
+                <button class="heart news__card-button">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.8391 1.96033C11.1701 1.2119 10.2807 0.800049 9.33459 0.800049C8.38831 0.800049 7.59423 1.2119 6.925 1.96033L6.49998 2.63921L6.075 1.96033C5.40597 1.2119 4.61164 0.800049 3.66557 0.800049C2.71953 0.800049 1.82982 1.2119 1.16086 1.96033C-0.220288 3.50554 -0.220288 6.01968 1.16086 7.56429L6.10991 12.3207C6.19083 12.4116 6.29157 12.4672 6.39682 12.4886C6.43211 12.4964 6.46761 12.5 6.50317 12.5C6.64318 12.5 6.78341 12.4403 6.89004 12.3207L11.8391 7.56429C13.2203 6.01968 13.2203 3.50554 11.8391 1.96033Z"
+                      fill="currentColor" />
+                  </svg>
+                </button>
                 <span class="numbers news__card-numbers">129</span>
               </div>
               <div class="flag news__card-flag">
@@ -424,11 +466,21 @@
 
               <div class="news__card-bottom">
                 <span class="date news__card-date">12 декабря</span>
-                <a href="/universal/article.html#comments"><img src="img/articles/Comment.svg" alt="Иконка" class="news__card-icon"></a>
+                <a href="/universal/article.html#comments" class="news__card-bottom-link">
+                  <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z"
+                      fill="currentColor" />
+                  </svg>
+                </a>
                 <span class="numbers news__card-numbers">30</span>
-                <button class="news__card-button"><img src="img/articles/heart.svg" alt="Иконка"
-                    class="news__card-icon"></button>
-                <span class="numbers news__card-numbers">284</span>
+                <button class="heart news__card-button">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.8391 1.96033C11.1701 1.2119 10.2807 0.800049 9.33459 0.800049C8.38831 0.800049 7.59423 1.2119 6.925 1.96033L6.49998 2.63921L6.075 1.96033C5.40597 1.2119 4.61164 0.800049 3.66557 0.800049C2.71953 0.800049 1.82982 1.2119 1.16086 1.96033C-0.220288 3.50554 -0.220288 6.01968 1.16086 7.56429L6.10991 12.3207C6.19083 12.4116 6.29157 12.4672 6.39682 12.4886C6.43211 12.4964 6.46761 12.5 6.50317 12.5C6.64318 12.5 6.78341 12.4403 6.89004 12.3207L11.8391 7.56429C13.2203 6.01968 13.2203 3.50554 11.8391 1.96033Z"
+                      fill="currentColor" />
+                  </svg>
+                </button>
               </div>
               <div class="flag news__card-flag">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -453,10 +505,21 @@
                   Он провел эксперимент и потенциальные заказчики...</a></p>
               <div class="news__card-bottom">
                 <span class="date news__card-date">20 июля</span>
-                <a href="/universal/article.html#comments"><img src="img/articles/Comment.svg" alt="Иконка" class="news__card-icon"></a>
+                <a href="/universal/article.html#comments" class="news__card-bottom-link">
+                  <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z"
+                      fill="currentColor" />
+                  </svg>
+                </a>
                 <span class="numbers news__card-numbers">102</span>
-                <button class="news__card-button"><img src="img/articles/heart.svg" alt="Иконка"
-                    class="news__card-icon"></button>
+                <button class="heart news__card-button">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.8391 1.96033C11.1701 1.2119 10.2807 0.800049 9.33459 0.800049C8.38831 0.800049 7.59423 1.2119 6.925 1.96033L6.49998 2.63921L6.075 1.96033C5.40597 1.2119 4.61164 0.800049 3.66557 0.800049C2.71953 0.800049 1.82982 1.2119 1.16086 1.96033C-0.220288 3.50554 -0.220288 6.01968 1.16086 7.56429L6.10991 12.3207C6.19083 12.4116 6.29157 12.4672 6.39682 12.4886C6.43211 12.4964 6.46761 12.5 6.50317 12.5C6.64318 12.5 6.78341 12.4403 6.89004 12.3207L11.8391 7.56429C13.2203 6.01968 13.2203 3.50554 11.8391 1.96033Z"
+                      fill="currentColor" />
+                  </svg>
+                </button>
                 <span class="numbers news__card-numbers">1,293</span>
               </div>
               <div class="flag news__card-flag">
@@ -482,11 +545,21 @@
                   мы подготовили для вас. Внутри важная информация про...</a></p>
               <div class="news__card-bottom_contry">
                 <span class="date news__card-date news__card-date_contry">22 октября</span>
-                <a href="/universal/article.html#comments"><img src="img/articles/Comment.svg" alt="Иконка"
-                    class="news__card-icon news__card-icon_contry"></a>
+                <a href="/universal/article.html#comments" class="news__card-bottom-link">
+                  <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z"
+                      fill="currentColor" />
+                  </svg>
+                </a>
                 <span class="numbers news__card-numbers news__card-numbers_contry">5</span>
-                <button class="news__card-button"><img src="img/articles/heart.svg" alt="Иконка"
-                    class="news__card-icon news__card-icon_contry"></button>
+                <button class="heart news__card-button">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.8391 1.96033C11.1701 1.2119 10.2807 0.800049 9.33459 0.800049C8.38831 0.800049 7.59423 1.2119 6.925 1.96033L6.49998 2.63921L6.075 1.96033C5.40597 1.2119 4.61164 0.800049 3.66557 0.800049C2.71953 0.800049 1.82982 1.2119 1.16086 1.96033C-0.220288 3.50554 -0.220288 6.01968 1.16086 7.56429L6.10991 12.3207C6.19083 12.4116 6.29157 12.4672 6.39682 12.4886C6.43211 12.4964 6.46761 12.5 6.50317 12.5C6.64318 12.5 6.78341 12.4403 6.89004 12.3207L11.8391 7.56429C13.2203 6.01968 13.2203 3.50554 11.8391 1.96033Z"
+                      fill="currentColor" />
+                  </svg>
+                </button>
                 <span class="numbers news__card-numbers news__card-numbers_contry">82</span>
               </div>
               <div class="flag news__card-flag">
@@ -512,10 +585,21 @@
                   лекции и бесплатные курсы.</a></p>
               <div class="news__card-bottom">
                 <span class="date news__card-date">26 октября</span>
-                <a href="/universal/article.html#comments"><img src="img/articles/Comment.svg" alt="Иконка" class="news__card-icon"></a>
+                <a href="/universal/article.html#comments" class="news__card-bottom-link">
+                  <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z"
+                      fill="currentColor" />
+                  </svg>
+                </a>
                 <span class="numbers news__card-numbers">101</span>
-                <button class="news__card-button"><img src="img/articles/heart.svg" alt="Иконка"
-                    class="news__card-icon"></button>
+                <button class="heart news__card-button">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.8391 1.96033C11.1701 1.2119 10.2807 0.800049 9.33459 0.800049C8.38831 0.800049 7.59423 1.2119 6.925 1.96033L6.49998 2.63921L6.075 1.96033C5.40597 1.2119 4.61164 0.800049 3.66557 0.800049C2.71953 0.800049 1.82982 1.2119 1.16086 1.96033C-0.220288 3.50554 -0.220288 6.01968 1.16086 7.56429L6.10991 12.3207C6.19083 12.4116 6.29157 12.4672 6.39682 12.4886C6.43211 12.4964 6.46761 12.5 6.50317 12.5C6.64318 12.5 6.78341 12.4403 6.89004 12.3207L11.8391 7.56429C13.2203 6.01968 13.2203 3.50554 11.8391 1.96033Z"
+                      fill="currentColor" />
+                  </svg>
+                </button>
                 <span class="numbers news__card-numbers">432</span>
               </div>
               <div class="flag news__card-flag">

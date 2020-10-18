@@ -113,6 +113,15 @@ $(document).ready(function () {
   window.scrollTo({ top: 0, behavior: 'smooth'});
   };
 
+  let heartButton = document.querySelectorAll('.heart');
+  heartButton.forEach(elem => elem.addEventListener('click', (evt) => {
+  if (evt.target.classList.contains('heart_active')) {
+    evt.target.classList.remove('heart_active')
+  } else {
+    evt.target.classList.add('heart_active')
+  }
+  }))
+
 });
 
 
