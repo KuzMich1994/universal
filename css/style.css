@@ -520,6 +520,22 @@ a:hover {
   color: #4592FF;
 }
 
+.like {
+  color: #BCBFC2;
+}
+
+.like_active {
+  color: #3DC47E;
+}
+
+.dislike {
+  color: #BCBFC2;
+}
+
+.dislike_active {
+  color: #FF4F52;
+}
+
 .header {
   background-color: #262D33;
   padding: 15px 0;
@@ -3032,6 +3048,13 @@ a:hover {
   text-decoration: none;
 }
 
+.comments__button:hover {
+  background-color: #4592FF;
+  text-decoration: none;
+  border: 1px solid transparent;
+  color: #ffffff;
+}
+
 .comments__button-bottom {
   margin-top: 2px;
   min-height: 48px;
@@ -3044,6 +3067,13 @@ a:hover {
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
+}
+
+.comments__button-bottom:hover {
+  background-color: #4592FF;
+  text-decoration: none;
+  border: 1px solid transparent;
+  color: #ffffff;
 }
 
 .comments__button-icon {
@@ -3136,6 +3166,11 @@ a:hover {
   margin-right: 5px;
   width: 15px;
   height: 15px;
+  color: #BCBFC2;
+}
+
+.comments__bottom-icon:hover {
+  color: #4592FF;
 }
 
 .comments__bottom-icon_mr-10 {
@@ -3164,6 +3199,7 @@ a:hover {
 }
 
 .comments__bottom-button {
+  margin-right: 10px;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -3237,6 +3273,10 @@ a:hover {
   border: none;
   cursor: pointer;
   outline: none;
+}
+
+.comment-block__form-button:hover {
+  background-color: #3387FF;
 }
 
 .comment-block__form-icon {
@@ -3719,12 +3759,18 @@ a:hover {
   .comments-container {
     max-width: 700px;
   }
+  .comments__bottom-icon:hover {
+    color: #BCBFC2;
+  }
   .comment-block {
     width: 650px;
   }
   .comment-block__form-message {
     width: 460px;
     height: 87px;
+  }
+  .comment-block__form-button:hover {
+    background-color: #4592FF;
   }
 }
 

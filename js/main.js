@@ -122,6 +122,24 @@ $(document).ready(function () {
   }
   }))
 
+  let likeButton = document.querySelectorAll('.like');
+  likeButton.forEach(elem => elem.addEventListener('click', (evt) => {
+  if (evt.target.classList.contains('like_active')) {
+    evt.target.classList.remove('like_active')
+  } else {
+    evt.target.classList.add('like_active')
+  }
+  }))
+
+  let dislikeButton = document.querySelectorAll('.dislike');
+  dislikeButton.forEach(elem => elem.addEventListener('click', (evt) => {
+  if (evt.target.classList.contains('dislike_active')) {
+    evt.target.classList.remove('dislike_active')
+  } else {
+    evt.target.classList.add('dislike_active')
+  }
+  }))
+
 });
 
 
