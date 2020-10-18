@@ -1239,6 +1239,10 @@ a:hover {
   text-overflow: ellipsis;
 }
 
+.dreamwork__comment-wrapper {
+  display: flex;
+}
+
 .dreamwork__link {
   margin-right: 5px;
   fill: #BCBFC2;
@@ -4172,9 +4176,12 @@ a:hover {
     margin-bottom: 10px;
   }
   .dreamwork__wrapper {
-    margin-top: 43px;
-    max-width: 400px;
+    margin-top: 20px;
+    max-width: 100%;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   .dreamwork__comment {
     margin-right: 20px;
@@ -4182,6 +4189,9 @@ a:hover {
     font-size: 13px;
     line-height: 15px;
     max-width: 200px;
+  }
+  .dreamwork__comment-wrapper {
+    margin-top: 10px;
   }
   .web-design__text {
     margin-top: 310px;
