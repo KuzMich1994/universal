@@ -1435,6 +1435,20 @@ a:hover {
   position: relative;
   padding: 25px 25px 13px 25px;
   background-color: #3BBDC4;
+  z-index: 1;
+}
+
+.download::after {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  content: '';
+  width: 56px;
+  height: 72px;
+  background: url(../img/articles/File.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
 
 .download__text {
@@ -3965,9 +3979,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-  .download::after {
-    width: 100%;
   }
   .download__text {
     max-width: 300px;

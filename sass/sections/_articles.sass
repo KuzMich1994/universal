@@ -273,14 +273,18 @@
   position: relative
   padding: 25px 25px 13px 25px
   background-color: #3BBDC4
-  // &::after
-  //   position: absolute
-  //   bottom: 45px
-  //   left: 0
-  //   content: ''
-  //   width: 263px
-  //   height: 1px
-  //   background-color: #96E2E3
+  z-index: 1
+  &::after
+    position: absolute
+    right: 25px
+    top: 25px
+    content: ''
+    width: 56px
+    height: 72px
+    background: url(../img/articles/File.svg)
+    background-repeat: no-repeat
+    background-size: cover
+    z-index: -1
   &__text
     margin-bottom: 19px
   &__title
