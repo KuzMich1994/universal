@@ -125,15 +125,33 @@
     &__title
       font-size: 24px
     &__flag
-      top: 260px
+      top: 90px
       left: 50%
       transform: translateX(-50%)
     &__links
-      flex-direction: column
       align-items: center
     &__link
       margin-bottom: 15px
       margin-right: 0
+      &:nth-child(1)
+        order: 1
+      &:nth-child(2)
+        order: 0
+      &:nth-child(3)
+        order: 3
+      &-text
+        display: none
+    &__icon
+      &_home
+        margin-left: 5px
+        width: 30px
+        height: 30px
+      &_prev
+        width: 30px
+        height: 30px
+      &_next
+        width: 30px
+        height: 30px
   .article
     &__wrapper
       &_first
