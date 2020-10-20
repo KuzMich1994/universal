@@ -634,6 +634,7 @@ a:hover {
   border-radius: 10px;
   background-color: #656B70;
   outline: none;
+  cursor: pointer;
 }
 
 .header-nav__button_light {
@@ -1154,8 +1155,11 @@ a:hover {
 }
 
 .dreamwork__card-link {
-  text-decoration: none;
-  color: #262D33;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .dreamwork__text {
@@ -1202,12 +1206,14 @@ a:hover {
 }
 
 .dreamwork__wrapper {
+  position: relative;
   margin-top: 15px;
   display: flex;
   align-items: center;
   text-decoration: none;
   color: #4B5157;
   fill: #BCBFC2;
+  z-index: 99;
 }
 
 .dreamwork__wrapper:hover {
@@ -1272,19 +1278,17 @@ a:hover {
   height: 15px;
 }
 
-.div {
-  margin-top: 15px;
-  display: flex;
-  align-items: center;
-}
-
 .web-design {
+  position: relative;
   padding: 0 25px 25px 25px;
 }
 
 .web-design__card-link {
-  text-decoration: none;
-  color: #FFFFFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .web-design__text {
@@ -1320,10 +1324,12 @@ a:hover {
 }
 
 .web-design__wrapper {
+  position: relative;
   display: flex;
   align-items: center;
   text-decoration: none;
   color: inherit;
+  z-index: 99;
 }
 
 .web-design__link {
@@ -1392,6 +1398,14 @@ a:hover {
   border-radius: 3px;
 }
 
+.tools {
+  position: relative;
+}
+
+.tools:hover {
+  background-color: #eeeeee;
+}
+
 .tools__image {
   width: 100%;
   height: 275px;
@@ -1412,12 +1426,20 @@ a:hover {
 }
 
 .tools__link {
-  text-decoration: none;
-  color: #262D33;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .other-article {
+  position: relative;
   padding: 25px 25px 30px 25px;
+}
+
+.other-article:hover {
+  background-color: #eeeeee;
 }
 
 .other-article__title {
@@ -1432,8 +1454,11 @@ a:hover {
 }
 
 .other-article__link {
-  text-decoration: none;
-  color: inherit;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
 }
 
 .other-article__description {
@@ -3670,6 +3695,12 @@ a:hover {
   }
   .web-design__link:hover {
     color: #BCBFC2;
+  }
+  .tools:hover {
+    background-color: #fff;
+  }
+  .other-article:hover {
+    background-color: #fff;
   }
   .other-article__description_free {
     margin-bottom: 12px;
