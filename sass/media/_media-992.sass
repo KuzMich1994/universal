@@ -8,13 +8,18 @@
     &-nav
       max-width: 100%
       flex-wrap: wrap
+      &__link
+        &_hover
+          &:hover
+            &::after
+              width: 0
     &__wrapper
       margin-top: 15px
       justify-content: space-evenly
       width: 100%
       order: 1
       &__item
-        margin-left: 0
+        margin-left: 0       
   .main-info
     &__wrapper
       width: 700px

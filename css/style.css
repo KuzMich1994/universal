@@ -587,6 +587,30 @@ a:hover {
   text-decoration: none;
 }
 
+.header-nav__link:hover {
+  text-decoration: none;
+}
+
+.header-nav__link_hover {
+  position: relative;
+}
+
+.header-nav__link_hover::after {
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #FFFFFF;
+  transition: all 0.3s;
+}
+
+.header-nav__link_hover:hover::after {
+  left: 0;
+  width: 100%;
+}
+
 .header-nav__link_grey {
   color: #939699;
 }
@@ -3597,6 +3621,9 @@ a:hover {
   .header-nav {
     max-width: 100%;
     flex-wrap: wrap;
+  }
+  .header-nav__link_hover:hover::after {
+    width: 0;
   }
   .header__wrapper {
     margin-top: 15px;
