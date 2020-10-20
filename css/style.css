@@ -509,11 +509,13 @@ a:hover {
 }
 
 .heart {
+  position: relative;
   color: #BCBFC2;
   background-color: transparent;
   border: none;
   outline: none;
   cursor: pointer;
+  z-index: 999;
 }
 
 .heart_active {
@@ -1205,6 +1207,11 @@ a:hover {
   align-items: center;
   text-decoration: none;
   color: #4B5157;
+  fill: #BCBFC2;
+}
+
+.dreamwork__wrapper:hover {
+  fill: #4592FF;
 }
 
 .dreamwork__avatar {
@@ -1240,23 +1247,35 @@ a:hover {
 }
 
 .dreamwork__comment-wrapper {
+  margin-right: 5px;
   display: flex;
+}
+
+.dreamwork__block {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
 }
 
 .dreamwork__link {
   margin-right: 5px;
   fill: #BCBFC2;
-  color: #BCBFC2;
 }
 
 .dreamwork__link:hover {
-  color: #4592FF;
+  fill: #4592FF;
 }
 
 .dreamwork__icon {
   margin-right: 5px;
   width: 15px;
   height: 15px;
+}
+
+.div {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
 }
 
 .web-design {
@@ -1872,12 +1891,18 @@ a:hover {
 }
 
 .article__card {
+  padding: 10px;
   position: absolute;
-  bottom: 36px;
-  right: 4px;
-  width: 263px;
+  bottom: 22px;
+  right: -9px;
+  width: 287px;
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
+}
+
+.article__card:hover {
+  background-color: #eeeeee;
 }
 
 .article__card-title {
@@ -1921,13 +1946,23 @@ a:hover {
   color: #4B5157;
 }
 
+.article__card-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
 .article__card-bottom {
   display: flex;
 }
 
 .article__card-bottom-link {
+  position: relative;
   margin-right: 5px;
   color: #BCBFC2;
+  z-index: 99;
 }
 
 .article__card-bottom-link:hover {
@@ -2189,6 +2224,23 @@ a:hover {
   overflow: hidden;
 }
 
+.news__link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.news__link-right {
+  position: absolute;
+  left: -25px;
+  right: -25px;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
 .news__card {
   position: relative;
   padding: 25px 25px 21px 23px;
@@ -2271,13 +2323,17 @@ a:hover {
 }
 
 .news__card-bottom {
+  position: relative;
   margin-top: 19px;
   display: flex;
+  z-index: 99;
 }
 
 .news__card-bottom_contry {
+  position: relative;
   display: flex;
   margin-top: 42px;
+  z-index: 99;
 }
 
 .news__card-bottom-link {
@@ -2370,6 +2426,10 @@ a:hover {
   border-bottom: none;
 }
 
+.news__post:hover {
+  background-color: #eeeeee;
+}
+
 .news__post-image {
   margin-right: 10px;
   width: 60px;
@@ -2431,7 +2491,7 @@ a:hover {
   color: #4592FF;
 }
 
-.news__post-link {
+.news__post-wrapper {
   display: flex;
   text-decoration: none;
   color: inherit;
@@ -2528,6 +2588,7 @@ a:hover {
 }
 
 .other-articles__card_small {
+  position: relative;
   padding: 25px 25px 27px 25px;
   width: 263px;
   background-color: #fff;
@@ -2538,9 +2599,12 @@ a:hover {
   background-color: #eeeeee;
 }
 
-.other-articles__card_link {
-  text-decoration: none;
-  color: inherit;
+.other-articles__card-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .other-articles__button {
@@ -2971,7 +3035,36 @@ a:hover {
 }
 
 .more-cards__card {
+  position: relative;
   flex-basis: 23%;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.more-cards__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  transition: all 1s ease;
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.85), rgba(64, 48, 61, 0.85));
+  border-radius: 10px;
+  opacity: 0;
+  z-index: 101;
+}
+
+.more-cards__hover:hover {
+  opacity: 1;
+}
+
+.more-cards__hover-link {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .more-cards__img {
@@ -2994,11 +3087,16 @@ a:hover {
 }
 
 .more-cards__link {
-  text-decoration: none;
-  color: #262D33;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
 }
 
 .more-cards__icon-link {
+  z-index: 100;
   margin-right: 5px;
   color: #BCBFC2;
 }
@@ -3008,7 +3106,9 @@ a:hover {
 }
 
 .more-cards__bottom {
+  position: relative;
   display: flex;
+  z-index: 999;
 }
 
 .more-cards__bottom-icon {
@@ -3226,8 +3326,14 @@ a:hover {
 }
 
 .comments__bottom-link {
+  display: flex;
   text-decoration: none;
   color: #262D33;
+  fill: #BCBFC2;
+}
+
+.comments__bottom-link:hover {
+  fill: #4592FF;
 }
 
 .comment-block {
@@ -3551,8 +3657,9 @@ a:hover {
   .dreamwork {
     padding-top: 35px;
   }
-  .dreamwork__link:hover {
-    color: #BCBFC2;
+  .dreamwork__wrapper:hover {
+    text-decoration: none;
+    fill: #BCBFC2;
   }
   .web-design__text {
     margin-top: 179px;
@@ -3619,6 +3726,9 @@ a:hover {
   }
   .news__post {
     flex-basis: 49%;
+  }
+  .news__post:hover {
+    background-color: #fff;
   }
   .news__post:nth-child(8) {
     display: none;
@@ -3745,6 +3855,9 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
   }
+  .article__card:hover {
+    background-color: #fff;
+  }
   .article__card-bottom-link:hover {
     color: #BCBFC2;
   }
@@ -3773,6 +3886,9 @@ a:hover {
   }
   .more-cards__icon-link:hover {
     color: #BCBFC2;
+  }
+  .more-cards__hover {
+    display: none;
   }
   .comments-container {
     max-width: 700px;
@@ -4167,7 +4283,7 @@ a:hover {
     padding-top: 125px;
   }
   .articles-grid {
-    grid-template-rows: repeat(9, 230px);
+    grid-template-rows: 230px auto 230px 230px 230px 230px 230px 230px 230px;
   }
   .articles__card_dreamwork {
     background-size: 202px 209px;
@@ -4190,19 +4306,21 @@ a:hover {
     margin-top: 20px;
     max-width: 100%;
     flex-wrap: wrap;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: flex-start;
   }
   .dreamwork__comment {
     margin-right: 20px;
     margin-top: 5px;
     font-size: 13px;
     line-height: 15px;
-    max-width: 200px;
+    width: 100%;
   }
   .dreamwork__comment-wrapper {
     margin-top: 10px;
+  }
+  .dreamwork__comment-numbers {
+    margin-top: 5px;
   }
   .web-design__text {
     margin-top: 310px;

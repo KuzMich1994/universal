@@ -18,10 +18,10 @@ $(document).ready(function () {
 
   let flagButton = document.querySelectorAll('.flag');
   flagButton.forEach(elem => elem.addEventListener('click', (evt) => {
-  if (evt.target.classList.contains('flag_active')) {
-    evt.target.classList.remove('flag_active')
+  if (evt.target.closest('div').classList.contains('flag_active')) {
+    evt.target.closest('div').classList.remove('flag_active')
   } else {
-    evt.target.classList.add('flag_active')
+    evt.target.closest('div').classList.add('flag_active')
   }
   }))
 
@@ -115,28 +115,28 @@ $(document).ready(function () {
 
   let heartButton = document.querySelectorAll('.heart');
   heartButton.forEach(elem => elem.addEventListener('click', (evt) => {
-  if (evt.target.classList.contains('heart_active')) {
-    evt.target.classList.remove('heart_active')
+  if (evt.target.closest('button').classList.contains('heart_active')) {
+    evt.target.closest('button').classList.remove('heart_active');
   } else {
-    evt.target.classList.add('heart_active')
+    evt.target.closest('button').classList.add('heart_active');
   }
   }))
 
   let likeButton = document.querySelectorAll('.like');
   likeButton.forEach(elem => elem.addEventListener('click', (evt) => {
-  if (evt.target.classList.contains('like_active')) {
-    evt.target.classList.remove('like_active')
+  if (evt.target.closest('button').classList.contains('like_active')) {
+    evt.target.closest('button').classList.remove('like_active')
   } else {
-    evt.target.classList.add('like_active')
+    evt.target.closest('button').classList.add('like_active')
   }
   }))
 
   let dislikeButton = document.querySelectorAll('.dislike');
   dislikeButton.forEach(elem => elem.addEventListener('click', (evt) => {
-  if (evt.target.classList.contains('dislike_active')) {
-    evt.target.classList.remove('dislike_active')
+  if (evt.target.closest('button').classList.contains('dislike_active')) {
+    evt.target.closest('button').classList.remove('dislike_active')
   } else {
-    evt.target.classList.add('dislike_active')
+    evt.target.closest('button').classList.add('dislike_active')
   }
   }))
 

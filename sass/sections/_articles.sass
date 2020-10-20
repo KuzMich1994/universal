@@ -109,6 +109,9 @@
     align-items: center
     text-decoration: none
     color: $text-color-dark
+    fill: #BCBFC2
+    &:hover
+      fill: #4592FF
   &__avatar
     margin-right: 10px
     width: 30px
@@ -134,17 +137,25 @@
       overflow: hidden
       text-overflow: ellipsis
     &-wrapper
+      margin-right: 5px
       display: flex
+  &__block
+    margin-top: 15px
+    display: flex
+    align-items: center
   &__link
     margin-right: 5px
     fill: #BCBFC2
-    color: #BCBFC2
     &:hover
-      color: #4592FF
+      fill: #4592FF
   &__icon
     margin-right: 5px
     width: 15px
     height: 15px
+.div
+  margin-top: 15px
+  display: flex
+  align-items: center
 .web-design
   padding: 0 25px 25px 25px
   &__card

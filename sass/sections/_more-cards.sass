@@ -6,7 +6,44 @@
     display: flex
     justify-content: space-between
   &__card
+    position: relative
     flex-basis: 23%
+    border-radius: 10px
+    z-index: 1
+    // &::after
+    //   display: none
+    //   position: absolute
+    //   top: 0
+    //   left: 0
+    //   right: 0
+    //   bottom: 0
+    //   content: ''
+    //   background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+    //   z-index: 99
+    // &:hover
+    //   &::after
+    //     display: block
+  &__hover
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    
+    text-transform: uppercase
+    transition: all 1s ease
+    background: linear-gradient(0deg, rgba(64, 48, 61, 0.85), rgba(64, 48, 61, 0.85))
+    border-radius: 10px
+    opacity: 0
+    z-index: 101
+    &:hover
+      opacity: 1
+    &-link
+      color: #ffffff
+      text-decoration: none
   &__img
     width: 263px
     height: 180px
@@ -23,16 +60,23 @@
     line-height: 25px
     color: $title-color-dark
   &__link
-    text-decoration: none
-    color: $title-color-dark
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 99
   &__icon
     &-link
+      z-index: 100
       margin-right: 5px
       color: #BCBFC2
       &:hover
         color: $primary
   &__bottom
+    position: relative
     display: flex
+    z-index: 999
     &-icon
       margin-right: 5px
       width: 15px

@@ -10,6 +10,19 @@
     margin-right: 26px
     border-radius: 10px
     overflow: hidden
+  &__link
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    &-right
+      position: absolute
+      left: -25px
+      right: -25px
+      top: 0
+      bottom: 0
+      z-index: 99
   &__card
     position: relative
     padding: 25px 25px 21px 23px
@@ -68,11 +81,15 @@
       line-height: 20px
       color: $text-color-dark
     &-bottom
+      position: relative
       margin-top: 19px
       display: flex
+      z-index: 99
       &_contry
+        position: relative
         display: flex
         margin-top: 42px
+        z-index: 99
       &-link
         margin-right: 5px
         color: #BCBFC2
@@ -135,6 +152,8 @@
     border-bottom: 1px solid #D9DADB
     &:nth-child(8)
       border-bottom: none
+    &:hover
+      background-color: #eeeeee
     &-image
       margin-right: 10px
       width: 60px
@@ -182,7 +201,7 @@
         background-color: #D9DADB
       &:hover
         color: $primary
-    &-link
+    &-wrapper
       display: flex
       text-decoration: none
       color: inherit

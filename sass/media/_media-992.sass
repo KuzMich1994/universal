@@ -74,9 +74,10 @@
         grid-column: 1/7
   .dreamwork
     padding-top: 35px
-    &__link
+    &__wrapper
       &:hover
-        color: #BCBFC2
+        text-decoration: none
+        fill: #BCBFC2
   .web-design
     &__text
       margin-top: 179px
@@ -135,6 +136,8 @@
         width: 700px
     &__post
       flex-basis: 49%
+      &:hover
+        background-color: #fff
       &:nth-child(8)
         display: none
       &-icon
@@ -242,6 +245,8 @@
       margin-top: 40px
       margin-left: auto
       margin-right: auto
+      &:hover
+        background-color: #fff
       &-bottom
         &-link
           &:hover
@@ -271,6 +276,8 @@
       &-link
         &:hover
           color: #BCBFC2
+    &__hover
+      display: none
   .comments
     &-container
       max-width: 700px

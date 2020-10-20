@@ -157,12 +157,16 @@
       height: 70px
       z-index: -1
   &__card
+    padding: 10px
     position: absolute
-    bottom: 36px
-    right: 4px
-    width: 263px
+    bottom: 22px
+    right: -9px
+    width: 287px
     display: flex
     flex-direction: column
+    border-radius: 10px
+    &:hover
+      background-color: #eeeeee
     &-title
       margin-top: 0
       margin-bottom: 20px
@@ -196,11 +200,19 @@
       font-size: 14px
       line-height: 20px
       color: $text-color-dark
+    &-link
+      position: absolute
+      top: 0
+      right: 0
+      left: 0
+      bottom: 0
     &-bottom
       display: flex
       &-link
+        position: relative
         margin-right: 5px
         color: #BCBFC2
+        z-index: 99
         &:hover
           color: $primary
       &-icon
