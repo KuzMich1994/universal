@@ -17,13 +17,13 @@ $(document).ready(function () {
   })
 
   let flagButton = document.querySelectorAll('.flag');
-  flagButton.forEach(elem => elem.addEventListener('click', (evt) => {
-  if (evt.target.closest('div').classList.contains('flag_active')) {
-    evt.target.closest('div').classList.remove('flag_active')
-  } else {
-    evt.target.closest('div').classList.add('flag_active')
-  }
-  }))
+  let heartButton = document.querySelectorAll('.heart');
+  let likeButton = document.querySelectorAll('.like');
+  let dislikeButton = document.querySelectorAll('.dislike');
+  flagButton.forEach(elem => elem.onclick = () => elem.classList.toggle('flag_active'))
+  heartButton.forEach(elem => elem.onclick = () => elem.classList.toggle('heart_active'))
+  likeButton.forEach(elem => elem.onclick = () => elem.classList.toggle('like_active'))
+  dislikeButton.forEach(elem => elem.onclick = () => elem.classList.toggle('dislike_active'))
 
   var mySwiper = new Swiper('.photo-slider', {
   // Optional parameters
@@ -112,33 +112,6 @@ $(document).ready(function () {
   upButton.onclick = function () {
   window.scrollTo({ top: 0, behavior: 'smooth'});
   };
-
-  let heartButton = document.querySelectorAll('.heart');
-  heartButton.forEach(elem => elem.addEventListener('click', (evt) => {
-  if (evt.target.closest('button').classList.contains('heart_active')) {
-    evt.target.closest('button').classList.remove('heart_active');
-  } else {
-    evt.target.closest('button').classList.add('heart_active');
-  }
-  }))
-
-  let likeButton = document.querySelectorAll('.like');
-  likeButton.forEach(elem => elem.addEventListener('click', (evt) => {
-  if (evt.target.closest('button').classList.contains('like_active')) {
-    evt.target.closest('button').classList.remove('like_active')
-  } else {
-    evt.target.closest('button').classList.add('like_active')
-  }
-  }))
-
-  let dislikeButton = document.querySelectorAll('.dislike');
-  dislikeButton.forEach(elem => elem.addEventListener('click', (evt) => {
-  if (evt.target.closest('button').classList.contains('dislike_active')) {
-    evt.target.closest('button').classList.remove('dislike_active')
-  } else {
-    evt.target.closest('button').classList.add('dislike_active')
-  }
-  }))
 
 });
 
