@@ -48,7 +48,21 @@
             left: 0
             width: 100%
       &_grey
+        position: relative
         color: $numbers-color
+        &::after
+          position: absolute
+          left: 50%
+          bottom: -5px
+          content: ''
+          width: 0
+          height: 2px
+          background-color: $numbers-color
+          transition: all 0.3s
+        &:hover
+          &::after
+            left: 0
+            width: 100%
     &__search
       position: relative
       width: 263px

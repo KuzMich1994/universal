@@ -612,7 +612,24 @@ a:hover {
 }
 
 .header-nav__link_grey {
+  position: relative;
   color: #939699;
+}
+
+.header-nav__link_grey::after {
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #939699;
+  transition: all 0.3s;
+}
+
+.header-nav__link_grey:hover::after {
+  left: 0;
+  width: 100%;
 }
 
 .header-nav__search {
@@ -3623,6 +3640,9 @@ a:hover {
     flex-wrap: wrap;
   }
   .header-nav__link_hover:hover::after {
+    width: 0;
+  }
+  .header-nav__link_grey:hover::after {
     width: 0;
   }
   .header__wrapper {
